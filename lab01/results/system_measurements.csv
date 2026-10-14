@@ -1,0 +1,3 @@
+model,accuracy,training_ms,inference_ms,model_size_bytes,model_size_kb,training_peak_memory_mb,inference_peak_memory_mb
+Logistic Regression,0.9883,1.184750,0.026604,2217,2.17,130.91,131.08
+Random Forest,0.9357,94.846291,1.456584,290905,284.09,130.97,131.09
