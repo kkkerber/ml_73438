@@ -1,0 +1,10 @@
+{
+  "python": "3.11.8",
+  "numpy": "1.26.4",
+  "sklearn": "1.5.0",
+  "matplotlib": "3.9.0",
+  "platform": "macOS-15.7.1-arm64-arm-64bit",
+  "seed": 42,
+  "epochs": 50,
+  "batch_size": 32
+}

@@ -1,0 +1,332 @@
+Data: train=(1257, 64), test=(540, 64), one-hot=(1257, 10)
+W=16: shape=(32, 10), row sums OK, initial CE=2.30259513 (ln(10)=2.30258509)
+  W1(28, 1): analytical=-3.69903747e-05, numerical=-3.69903747e-05, rel.error=3.28e-13, PASS
+  W1(5, 11): analytical=-3.49664155e-05, numerical=-3.49664155e-05, rel.error=5.35e-13, PASS
+  W1(41, 13): analytical=0.00000000e+00, numerical=0.00000000e+00, rel.error=0.00e+00, PASS
+  W1(49, 6): analytical=0.00000000e+00, numerical=0.00000000e+00, rel.error=0.00e+00, PASS
+  W2(11, 1): analytical=0.00000000e+00, numerical=0.00000000e+00, rel.error=0.00e+00, PASS
+  W2(1, 8): analytical=5.55164640e-05, numerical=5.55164640e-05, rel.error=2.57e-13, PASS
+  W2(3, 3): analytical=0.00000000e+00, numerical=0.00000000e+00, rel.error=0.00e+00, PASS
+  W3(11, 6): analytical=-1.01861085e-05, numerical=-1.01861085e-05, rel.error=1.76e-12, PASS
+  W3(12, 1): analytical=-3.96053681e-05, numerical=-3.96053681e-05, rel.error=4.33e-13, PASS
+  W3(11, 4): analytical=1.57589150e-05, numerical=1.57589150e-05, rel.error=2.01e-13, PASS
+W=16: gradient check 10/10
+W=64: shape=(32, 10), row sums OK, initial CE=2.30262309 (ln(10)=2.30258509)
+  W1(28, 5): analytical=2.98532963e-05, numerical=2.98532963e-05, rel.error=1.81e-12, PASS
+  W1(5, 45): analytical=-4.71292315e-05, numerical=-4.71292315e-05, rel.error=3.55e-13, PASS
+  W1(41, 56): analytical=-8.01259964e-07, numerical=-8.01259964e-07, rel.error=9.80e-11, PASS
+  W1(49, 32): analytical=5.40114904e-06, numerical=5.40114904e-06, rel.error=3.90e-11, PASS
+  W2(44, 39): analytical=0.00000000e+00, numerical=0.00000000e+00, rel.error=0.00e+00, PASS
+  W2(6, 1): analytical=0.00000000e+00, numerical=0.00000000e+00, rel.error=0.00e+00, PASS
+  W2(12, 57): analytical=-4.12961100e-06, numerical=-4.12961100e-06, rel.error=4.92e-11, PASS
+  W3(46, 9): analytical=5.29764944e-05, numerical=5.29764944e-05, rel.error=4.04e-12, PASS
+  W3(48, 6): analytical=3.45738082e-05, numerical=3.45738082e-05, rel.error=5.95e-12, PASS
+  W3(45, 9): analytical=5.58247983e-05, numerical=5.58247983e-05, rel.error=1.26e-12, PASS
+W=64: gradient check 10/10
+W=16 lr=0.001 epoch=01/50 loss=2.30258484 train_accuracy=0.1002
+W=16 lr=0.001 epoch=02/50 loss=2.30258328 train_accuracy=0.1002
+W=16 lr=0.001 epoch=03/50 loss=2.30258280 train_accuracy=0.1559
+W=16 lr=0.001 epoch=04/50 loss=2.30258227 train_accuracy=0.1002
+W=16 lr=0.001 epoch=05/50 loss=2.30258161 train_accuracy=0.1901
+W=16 lr=0.001 epoch=06/50 loss=2.30258071 train_accuracy=0.1010
+W=16 lr=0.001 epoch=07/50 loss=2.30257989 train_accuracy=0.1010
+W=16 lr=0.001 epoch=08/50 loss=2.30257920 train_accuracy=0.1488
+W=16 lr=0.001 epoch=09/50 loss=2.30257808 train_accuracy=0.1718
+W=16 lr=0.001 epoch=10/50 loss=2.30257686 train_accuracy=0.1010
+W=16 lr=0.001 epoch=11/50 loss=2.30257565 train_accuracy=0.1010
+W=16 lr=0.001 epoch=12/50 loss=2.30257464 train_accuracy=0.1010
+W=16 lr=0.001 epoch=13/50 loss=2.30257414 train_accuracy=0.1010
+W=16 lr=0.001 epoch=14/50 loss=2.30257327 train_accuracy=0.1010
+W=16 lr=0.001 epoch=15/50 loss=2.30257211 train_accuracy=0.1010
+W=16 lr=0.001 epoch=16/50 loss=2.30257167 train_accuracy=0.1010
+W=16 lr=0.001 epoch=17/50 loss=2.30257101 train_accuracy=0.1010
+W=16 lr=0.001 epoch=18/50 loss=2.30257072 train_accuracy=0.1010
+W=16 lr=0.001 epoch=19/50 loss=2.30256982 train_accuracy=0.1010
+W=16 lr=0.001 epoch=20/50 loss=2.30256924 train_accuracy=0.1010
+W=16 lr=0.001 epoch=21/50 loss=2.30256876 train_accuracy=0.1010
+W=16 lr=0.001 epoch=22/50 loss=2.30256801 train_accuracy=0.1010
+W=16 lr=0.001 epoch=23/50 loss=2.30256681 train_accuracy=0.1010
+W=16 lr=0.001 epoch=24/50 loss=2.30256608 train_accuracy=0.1010
+W=16 lr=0.001 epoch=25/50 loss=2.30256563 train_accuracy=0.1010
+W=16 lr=0.001 epoch=26/50 loss=2.30256526 train_accuracy=0.1010
+W=16 lr=0.001 epoch=27/50 loss=2.30256466 train_accuracy=0.1010
+W=16 lr=0.001 epoch=28/50 loss=2.30256366 train_accuracy=0.1010
+W=16 lr=0.001 epoch=29/50 loss=2.30256325 train_accuracy=0.1010
+W=16 lr=0.001 epoch=30/50 loss=2.30256214 train_accuracy=0.1010
+W=16 lr=0.001 epoch=31/50 loss=2.30256195 train_accuracy=0.1010
+W=16 lr=0.001 epoch=32/50 loss=2.30256167 train_accuracy=0.1010
+W=16 lr=0.001 epoch=33/50 loss=2.30256041 train_accuracy=0.1018
+W=16 lr=0.001 epoch=34/50 loss=2.30256007 train_accuracy=0.1814
+W=16 lr=0.001 epoch=35/50 loss=2.30255906 train_accuracy=0.1010
+W=16 lr=0.001 epoch=36/50 loss=2.30255856 train_accuracy=0.1710
+W=16 lr=0.001 epoch=37/50 loss=2.30255784 train_accuracy=0.1018
+W=16 lr=0.001 epoch=38/50 loss=2.30255723 train_accuracy=0.1018
+W=16 lr=0.001 epoch=39/50 loss=2.30255642 train_accuracy=0.1018
+W=16 lr=0.001 epoch=40/50 loss=2.30255560 train_accuracy=0.1018
+W=16 lr=0.001 epoch=41/50 loss=2.30255480 train_accuracy=0.1018
+W=16 lr=0.001 epoch=42/50 loss=2.30255421 train_accuracy=0.1018
+W=16 lr=0.001 epoch=43/50 loss=2.30255406 train_accuracy=0.1018
+W=16 lr=0.001 epoch=44/50 loss=2.30255355 train_accuracy=0.1018
+W=16 lr=0.001 epoch=45/50 loss=2.30255261 train_accuracy=0.1018
+W=16 lr=0.001 epoch=46/50 loss=2.30255180 train_accuracy=0.1018
+W=16 lr=0.001 epoch=47/50 loss=2.30255088 train_accuracy=0.1018
+W=16 lr=0.001 epoch=48/50 loss=2.30255061 train_accuracy=0.1018
+W=16 lr=0.001 epoch=49/50 loss=2.30254998 train_accuracy=0.1018
+W=16 lr=0.001 epoch=50/50 loss=2.30254962 train_accuracy=0.1018
+FINAL W=16 lr=0.001: test_accuracy=10.1852%, forward=28.750 µs, backward=28.917 µs
+W=16 lr=0.01 epoch=01/50 loss=2.30257899 train_accuracy=0.1002
+W=16 lr=0.01 epoch=02/50 loss=2.30256510 train_accuracy=0.1018
+W=16 lr=0.01 epoch=03/50 loss=2.30256235 train_accuracy=0.1018
+W=16 lr=0.01 epoch=04/50 loss=2.30255962 train_accuracy=0.1002
+W=16 lr=0.01 epoch=05/50 loss=2.30255552 train_accuracy=0.1002
+W=16 lr=0.01 epoch=06/50 loss=2.30254930 train_accuracy=0.1010
+W=16 lr=0.01 epoch=07/50 loss=2.30254423 train_accuracy=0.1010
+W=16 lr=0.01 epoch=08/50 loss=2.30253996 train_accuracy=0.1002
+W=16 lr=0.01 epoch=09/50 loss=2.30253240 train_accuracy=0.1018
+W=16 lr=0.01 epoch=10/50 loss=2.30252605 train_accuracy=0.1010
+W=16 lr=0.01 epoch=11/50 loss=2.30251901 train_accuracy=0.1010
+W=16 lr=0.01 epoch=12/50 loss=2.30251477 train_accuracy=0.1010
+W=16 lr=0.01 epoch=13/50 loss=2.30251445 train_accuracy=0.1010
+W=16 lr=0.01 epoch=14/50 loss=2.30251101 train_accuracy=0.1010
+W=16 lr=0.01 epoch=15/50 loss=2.30250634 train_accuracy=0.1010
+W=16 lr=0.01 epoch=16/50 loss=2.30250611 train_accuracy=0.1010
+W=16 lr=0.01 epoch=17/50 loss=2.30250504 train_accuracy=0.1010
+W=16 lr=0.01 epoch=18/50 loss=2.30250641 train_accuracy=0.1010
+W=16 lr=0.01 epoch=19/50 loss=2.30250288 train_accuracy=0.1010
+W=16 lr=0.01 epoch=20/50 loss=2.30250176 train_accuracy=0.1010
+W=16 lr=0.01 epoch=21/50 loss=2.30250008 train_accuracy=0.1010
+W=16 lr=0.01 epoch=22/50 loss=2.30249789 train_accuracy=0.1018
+W=16 lr=0.01 epoch=23/50 loss=2.30249463 train_accuracy=0.1010
+W=16 lr=0.01 epoch=24/50 loss=2.30249304 train_accuracy=0.1010
+W=16 lr=0.01 epoch=25/50 loss=2.30249249 train_accuracy=0.1010
+W=16 lr=0.01 epoch=26/50 loss=2.30249236 train_accuracy=0.1010
+W=16 lr=0.01 epoch=27/50 loss=2.30249173 train_accuracy=0.1010
+W=16 lr=0.01 epoch=28/50 loss=2.30248904 train_accuracy=0.1010
+W=16 lr=0.01 epoch=29/50 loss=2.30248940 train_accuracy=0.1010
+W=16 lr=0.01 epoch=30/50 loss=2.30248607 train_accuracy=0.1018
+W=16 lr=0.01 epoch=31/50 loss=2.30248671 train_accuracy=0.1018
+W=16 lr=0.01 epoch=32/50 loss=2.30248764 train_accuracy=0.1018
+W=16 lr=0.01 epoch=33/50 loss=2.30248435 train_accuracy=0.1018
+W=16 lr=0.01 epoch=34/50 loss=2.30248429 train_accuracy=0.1018
+W=16 lr=0.01 epoch=35/50 loss=2.30248214 train_accuracy=0.1018
+W=16 lr=0.01 epoch=36/50 loss=2.30248172 train_accuracy=0.1018
+W=16 lr=0.01 epoch=37/50 loss=2.30248117 train_accuracy=0.1018
+W=16 lr=0.01 epoch=38/50 loss=2.30248038 train_accuracy=0.1018
+W=16 lr=0.01 epoch=39/50 loss=2.30247946 train_accuracy=0.1018
+W=16 lr=0.01 epoch=40/50 loss=2.30247825 train_accuracy=0.1018
+W=16 lr=0.01 epoch=41/50 loss=2.30247671 train_accuracy=0.1018
+W=16 lr=0.01 epoch=42/50 loss=2.30247617 train_accuracy=0.1018
+W=16 lr=0.01 epoch=43/50 loss=2.30247686 train_accuracy=0.1018
+W=16 lr=0.01 epoch=44/50 loss=2.30247706 train_accuracy=0.1018
+W=16 lr=0.01 epoch=45/50 loss=2.30247589 train_accuracy=0.1018
+W=16 lr=0.01 epoch=46/50 loss=2.30247540 train_accuracy=0.1018
+W=16 lr=0.01 epoch=47/50 loss=2.30247434 train_accuracy=0.1018
+W=16 lr=0.01 epoch=48/50 loss=2.30247493 train_accuracy=0.1018
+W=16 lr=0.01 epoch=49/50 loss=2.30247531 train_accuracy=0.1018
+W=16 lr=0.01 epoch=50/50 loss=2.30247645 train_accuracy=0.1018
+FINAL W=16 lr=0.01: test_accuracy=10.1852%, forward=28.375 µs, backward=28.916 µs
+W=16 lr=0.1 epoch=01/50 loss=2.30255169 train_accuracy=0.1002
+W=16 lr=0.1 epoch=02/50 loss=2.30252201 train_accuracy=0.1018
+W=16 lr=0.1 epoch=03/50 loss=2.30251994 train_accuracy=0.1002
+W=16 lr=0.1 epoch=04/50 loss=2.30256628 train_accuracy=0.1002
+W=16 lr=0.1 epoch=05/50 loss=2.30257060 train_accuracy=0.1002
+W=16 lr=0.1 epoch=06/50 loss=2.30252310 train_accuracy=0.0994
+W=16 lr=0.1 epoch=07/50 loss=2.30251658 train_accuracy=0.1002
+W=16 lr=0.1 epoch=08/50 loss=2.30250226 train_accuracy=0.1002
+W=16 lr=0.1 epoch=09/50 loss=2.30249495 train_accuracy=0.1018
+W=16 lr=0.1 epoch=10/50 loss=2.30253327 train_accuracy=0.1010
+W=16 lr=0.1 epoch=11/50 loss=2.30251030 train_accuracy=0.1034
+W=16 lr=0.1 epoch=12/50 loss=2.30253959 train_accuracy=0.1010
+W=16 lr=0.1 epoch=13/50 loss=2.30254238 train_accuracy=0.1010
+W=16 lr=0.1 epoch=14/50 loss=2.30254445 train_accuracy=0.1010
+W=16 lr=0.1 epoch=15/50 loss=2.30250480 train_accuracy=0.1010
+W=16 lr=0.1 epoch=16/50 loss=2.30251038 train_accuracy=0.1010
+W=16 lr=0.1 epoch=17/50 loss=2.30254564 train_accuracy=0.1010
+W=16 lr=0.1 epoch=18/50 loss=2.30256179 train_accuracy=0.1010
+W=16 lr=0.1 epoch=19/50 loss=2.30248248 train_accuracy=0.1002
+W=16 lr=0.1 epoch=20/50 loss=2.30247947 train_accuracy=0.1002
+W=16 lr=0.1 epoch=21/50 loss=2.30247116 train_accuracy=0.1018
+W=16 lr=0.1 epoch=22/50 loss=2.30245452 train_accuracy=0.1018
+W=16 lr=0.1 epoch=23/50 loss=2.30245779 train_accuracy=0.1018
+W=16 lr=0.1 epoch=24/50 loss=2.30242032 train_accuracy=0.1010
+W=16 lr=0.1 epoch=25/50 loss=2.30243238 train_accuracy=0.1010
+W=16 lr=0.1 epoch=26/50 loss=2.30240701 train_accuracy=0.1010
+W=16 lr=0.1 epoch=27/50 loss=2.30242195 train_accuracy=0.1010
+W=16 lr=0.1 epoch=28/50 loss=2.30240202 train_accuracy=0.1010
+W=16 lr=0.1 epoch=29/50 loss=2.30233555 train_accuracy=0.1010
+W=16 lr=0.1 epoch=30/50 loss=2.30229040 train_accuracy=0.1010
+W=16 lr=0.1 epoch=31/50 loss=2.30220089 train_accuracy=0.1758
+W=16 lr=0.1 epoch=32/50 loss=2.30215714 train_accuracy=0.1010
+W=16 lr=0.1 epoch=33/50 loss=2.30205253 train_accuracy=0.1010
+W=16 lr=0.1 epoch=34/50 loss=2.30190722 train_accuracy=0.1074
+W=16 lr=0.1 epoch=35/50 loss=2.30177691 train_accuracy=0.1010
+W=16 lr=0.1 epoch=36/50 loss=2.30148976 train_accuracy=0.1010
+W=16 lr=0.1 epoch=37/50 loss=2.30106806 train_accuracy=0.1010
+W=16 lr=0.1 epoch=38/50 loss=2.30036588 train_accuracy=0.1893
+W=16 lr=0.1 epoch=39/50 loss=2.29922753 train_accuracy=0.1464
+W=16 lr=0.1 epoch=40/50 loss=2.29693780 train_accuracy=0.1018
+W=16 lr=0.1 epoch=41/50 loss=2.29221709 train_accuracy=0.1551
+W=16 lr=0.1 epoch=42/50 loss=2.28089517 train_accuracy=0.2259
+W=16 lr=0.1 epoch=43/50 loss=2.24749370 train_accuracy=0.2196
+W=16 lr=0.1 epoch=44/50 loss=2.12804631 train_accuracy=0.1973
+W=16 lr=0.1 epoch=45/50 loss=1.88864648 train_accuracy=0.2307
+W=16 lr=0.1 epoch=46/50 loss=1.76462343 train_accuracy=0.2315
+W=16 lr=0.1 epoch=47/50 loss=1.76379846 train_accuracy=0.2538
+W=16 lr=0.1 epoch=48/50 loss=1.63737107 train_accuracy=0.3007
+W=16 lr=0.1 epoch=49/50 loss=1.82076951 train_accuracy=0.2673
+W=16 lr=0.1 epoch=50/50 loss=1.59701692 train_accuracy=0.3222
+FINAL W=16 lr=0.1: test_accuracy=32.5926%, forward=29.375 µs, backward=29.584 µs
+W=64 lr=0.001 epoch=01/50 loss=2.30259098 train_accuracy=0.0931
+W=64 lr=0.001 epoch=02/50 loss=2.30258859 train_accuracy=0.0788
+W=64 lr=0.001 epoch=03/50 loss=2.30258730 train_accuracy=0.0684
+W=64 lr=0.001 epoch=04/50 loss=2.30258598 train_accuracy=0.1002
+W=64 lr=0.001 epoch=05/50 loss=2.30258456 train_accuracy=0.0843
+W=64 lr=0.001 epoch=06/50 loss=2.30258289 train_accuracy=0.0923
+W=64 lr=0.001 epoch=07/50 loss=2.30258131 train_accuracy=0.0724
+W=64 lr=0.001 epoch=08/50 loss=2.30257986 train_accuracy=0.0883
+W=64 lr=0.001 epoch=09/50 loss=2.30257801 train_accuracy=0.0867
+W=64 lr=0.001 epoch=10/50 loss=2.30257609 train_accuracy=0.1010
+W=64 lr=0.001 epoch=11/50 loss=2.30257419 train_accuracy=0.1010
+W=64 lr=0.001 epoch=12/50 loss=2.30257251 train_accuracy=0.1010
+W=64 lr=0.001 epoch=13/50 loss=2.30257134 train_accuracy=0.1010
+W=64 lr=0.001 epoch=14/50 loss=2.30256983 train_accuracy=0.1010
+W=64 lr=0.001 epoch=15/50 loss=2.30256804 train_accuracy=0.1010
+W=64 lr=0.001 epoch=16/50 loss=2.30256699 train_accuracy=0.1010
+W=64 lr=0.001 epoch=17/50 loss=2.30256572 train_accuracy=0.1010
+W=64 lr=0.001 epoch=18/50 loss=2.30256479 train_accuracy=0.1010
+W=64 lr=0.001 epoch=19/50 loss=2.30256327 train_accuracy=0.1010
+W=64 lr=0.001 epoch=20/50 loss=2.30256207 train_accuracy=0.1010
+W=64 lr=0.001 epoch=21/50 loss=2.30256099 train_accuracy=0.1010
+W=64 lr=0.001 epoch=22/50 loss=2.30255965 train_accuracy=0.1010
+W=64 lr=0.001 epoch=23/50 loss=2.30255785 train_accuracy=0.1010
+W=64 lr=0.001 epoch=24/50 loss=2.30255653 train_accuracy=0.1010
+W=64 lr=0.001 epoch=25/50 loss=2.30255551 train_accuracy=0.1010
+W=64 lr=0.001 epoch=26/50 loss=2.30255456 train_accuracy=0.1010
+W=64 lr=0.001 epoch=27/50 loss=2.30255339 train_accuracy=0.1010
+W=64 lr=0.001 epoch=28/50 loss=2.30255182 train_accuracy=0.1010
+W=64 lr=0.001 epoch=29/50 loss=2.30255084 train_accuracy=0.1010
+W=64 lr=0.001 epoch=30/50 loss=2.30254917 train_accuracy=0.1010
+W=64 lr=0.001 epoch=31/50 loss=2.30254842 train_accuracy=0.1010
+W=64 lr=0.001 epoch=32/50 loss=2.30254758 train_accuracy=0.1010
+W=64 lr=0.001 epoch=33/50 loss=2.30254577 train_accuracy=0.1233
+W=64 lr=0.001 epoch=34/50 loss=2.30254488 train_accuracy=0.1050
+W=64 lr=0.001 epoch=35/50 loss=2.30254332 train_accuracy=0.1002
+W=64 lr=0.001 epoch=36/50 loss=2.30254226 train_accuracy=0.1018
+W=64 lr=0.001 epoch=37/50 loss=2.30254100 train_accuracy=0.1193
+W=64 lr=0.001 epoch=38/50 loss=2.30253984 train_accuracy=0.1018
+W=64 lr=0.001 epoch=39/50 loss=2.30253848 train_accuracy=0.1018
+W=64 lr=0.001 epoch=40/50 loss=2.30253711 train_accuracy=0.1018
+W=64 lr=0.001 epoch=41/50 loss=2.30253575 train_accuracy=0.1018
+W=64 lr=0.001 epoch=42/50 loss=2.30253463 train_accuracy=0.1018
+W=64 lr=0.001 epoch=43/50 loss=2.30253393 train_accuracy=0.1018
+W=64 lr=0.001 epoch=44/50 loss=2.30253288 train_accuracy=0.1018
+W=64 lr=0.001 epoch=45/50 loss=2.30253140 train_accuracy=0.1018
+W=64 lr=0.001 epoch=46/50 loss=2.30253005 train_accuracy=0.1018
+W=64 lr=0.001 epoch=47/50 loss=2.30252860 train_accuracy=0.1018
+W=64 lr=0.001 epoch=48/50 loss=2.30252780 train_accuracy=0.1018
+W=64 lr=0.001 epoch=49/50 loss=2.30252666 train_accuracy=0.1018
+W=64 lr=0.001 epoch=50/50 loss=2.30252579 train_accuracy=0.1018
+FINAL W=64 lr=0.001: test_accuracy=10.1852%, forward=71.916 µs, backward=75.792 µs
+W=64 lr=0.01 epoch=01/50 loss=2.30257811 train_accuracy=0.1002
+W=64 lr=0.01 epoch=02/50 loss=2.30255770 train_accuracy=0.1018
+W=64 lr=0.01 epoch=03/50 loss=2.30254916 train_accuracy=0.1018
+W=64 lr=0.01 epoch=04/50 loss=2.30254079 train_accuracy=0.1002
+W=64 lr=0.01 epoch=05/50 loss=2.30253146 train_accuracy=0.1002
+W=64 lr=0.01 epoch=06/50 loss=2.30252096 train_accuracy=0.1010
+W=64 lr=0.01 epoch=07/50 loss=2.30251285 train_accuracy=0.1026
+W=64 lr=0.01 epoch=08/50 loss=2.30250596 train_accuracy=0.1002
+W=64 lr=0.01 epoch=09/50 loss=2.30249586 train_accuracy=0.1018
+W=64 lr=0.01 epoch=10/50 loss=2.30248733 train_accuracy=0.1010
+W=64 lr=0.01 epoch=11/50 loss=2.30247836 train_accuracy=0.1010
+W=64 lr=0.01 epoch=12/50 loss=2.30247231 train_accuracy=0.1010
+W=64 lr=0.01 epoch=13/50 loss=2.30246985 train_accuracy=0.1010
+W=64 lr=0.01 epoch=14/50 loss=2.30246425 train_accuracy=0.1010
+W=64 lr=0.01 epoch=15/50 loss=2.30245751 train_accuracy=0.1010
+W=64 lr=0.01 epoch=16/50 loss=2.30245519 train_accuracy=0.1010
+W=64 lr=0.01 epoch=17/50 loss=2.30245209 train_accuracy=0.1010
+W=64 lr=0.01 epoch=18/50 loss=2.30245137 train_accuracy=0.1010
+W=64 lr=0.01 epoch=19/50 loss=2.30244571 train_accuracy=0.1010
+W=64 lr=0.01 epoch=20/50 loss=2.30244250 train_accuracy=0.1010
+W=64 lr=0.01 epoch=21/50 loss=2.30243867 train_accuracy=0.1209
+W=64 lr=0.01 epoch=22/50 loss=2.30243438 train_accuracy=0.1018
+W=64 lr=0.01 epoch=23/50 loss=2.30242897 train_accuracy=0.1010
+W=64 lr=0.01 epoch=24/50 loss=2.30242529 train_accuracy=0.1217
+W=64 lr=0.01 epoch=25/50 loss=2.30242263 train_accuracy=0.1010
+W=64 lr=0.01 epoch=26/50 loss=2.30242038 train_accuracy=0.1010
+W=64 lr=0.01 epoch=27/50 loss=2.30241754 train_accuracy=0.1010
+W=64 lr=0.01 epoch=28/50 loss=2.30241262 train_accuracy=0.1010
+W=64 lr=0.01 epoch=29/50 loss=2.30241075 train_accuracy=0.1010
+W=64 lr=0.01 epoch=30/50 loss=2.30240509 train_accuracy=0.1018
+W=64 lr=0.01 epoch=31/50 loss=2.30240340 train_accuracy=0.1018
+W=64 lr=0.01 epoch=32/50 loss=2.30240192 train_accuracy=0.1018
+W=64 lr=0.01 epoch=33/50 loss=2.30239619 train_accuracy=0.1018
+W=64 lr=0.01 epoch=34/50 loss=2.30239369 train_accuracy=0.1018
+W=64 lr=0.01 epoch=35/50 loss=2.30238909 train_accuracy=0.1018
+W=64 lr=0.01 epoch=36/50 loss=2.30238619 train_accuracy=0.1018
+W=64 lr=0.01 epoch=37/50 loss=2.30238315 train_accuracy=0.1623
+W=64 lr=0.01 epoch=38/50 loss=2.30237985 train_accuracy=0.1018
+W=64 lr=0.01 epoch=39/50 loss=2.30237641 train_accuracy=0.1018
+W=64 lr=0.01 epoch=40/50 loss=2.30237262 train_accuracy=0.1018
+W=64 lr=0.01 epoch=41/50 loss=2.30236848 train_accuracy=0.1018
+W=64 lr=0.01 epoch=42/50 loss=2.30236531 train_accuracy=0.1018
+W=64 lr=0.01 epoch=43/50 loss=2.30236334 train_accuracy=0.1018
+W=64 lr=0.01 epoch=44/50 loss=2.30236082 train_accuracy=0.1018
+W=64 lr=0.01 epoch=45/50 loss=2.30235690 train_accuracy=0.1018
+W=64 lr=0.01 epoch=46/50 loss=2.30235359 train_accuracy=0.1018
+W=64 lr=0.01 epoch=47/50 loss=2.30234971 train_accuracy=0.1018
+W=64 lr=0.01 epoch=48/50 loss=2.30234742 train_accuracy=0.1018
+W=64 lr=0.01 epoch=49/50 loss=2.30234487 train_accuracy=0.1018
+W=64 lr=0.01 epoch=50/50 loss=2.30234306 train_accuracy=0.1018
+FINAL W=64 lr=0.01: test_accuracy=10.1852%, forward=73.478 µs, backward=76.604 µs
+W=64 lr=0.1 epoch=01/50 loss=2.30251437 train_accuracy=0.1002
+W=64 lr=0.1 epoch=02/50 loss=2.30246417 train_accuracy=0.1018
+W=64 lr=0.1 epoch=03/50 loss=2.30243923 train_accuracy=0.1002
+W=64 lr=0.1 epoch=04/50 loss=2.30246042 train_accuracy=0.1002
+W=64 lr=0.1 epoch=05/50 loss=2.30243841 train_accuracy=0.1090
+W=64 lr=0.1 epoch=06/50 loss=2.30236002 train_accuracy=0.0994
+W=64 lr=0.1 epoch=07/50 loss=2.30231532 train_accuracy=0.1002
+W=64 lr=0.1 epoch=08/50 loss=2.30225582 train_accuracy=0.1002
+W=64 lr=0.1 epoch=09/50 loss=2.30219174 train_accuracy=0.1018
+W=64 lr=0.1 epoch=10/50 loss=2.30216028 train_accuracy=0.1010
+W=64 lr=0.1 epoch=11/50 loss=2.30204371 train_accuracy=0.1997
+W=64 lr=0.1 epoch=12/50 loss=2.30195330 train_accuracy=0.1082
+W=64 lr=0.1 epoch=13/50 loss=2.30179303 train_accuracy=0.1989
+W=64 lr=0.1 epoch=14/50 loss=2.30156974 train_accuracy=0.1981
+W=64 lr=0.1 epoch=15/50 loss=2.30119907 train_accuracy=0.1010
+W=64 lr=0.1 epoch=16/50 loss=2.30069878 train_accuracy=0.2005
+W=64 lr=0.1 epoch=17/50 loss=2.29992247 train_accuracy=0.1010
+W=64 lr=0.1 epoch=18/50 loss=2.29851667 train_accuracy=0.2013
+W=64 lr=0.1 epoch=19/50 loss=2.29577759 train_accuracy=0.2204
+W=64 lr=0.1 epoch=20/50 loss=2.28981309 train_accuracy=0.1941
+W=64 lr=0.1 epoch=21/50 loss=2.27420171 train_accuracy=0.2243
+W=64 lr=0.1 epoch=22/50 loss=2.22350084 train_accuracy=0.2013
+W=64 lr=0.1 epoch=23/50 loss=2.04875056 train_accuracy=0.2021
+W=64 lr=0.1 epoch=24/50 loss=1.80244835 train_accuracy=0.2570
+W=64 lr=0.1 epoch=25/50 loss=1.63691132 train_accuracy=0.4200
+W=64 lr=0.1 epoch=26/50 loss=1.66035390 train_accuracy=0.3166
+W=64 lr=0.1 epoch=27/50 loss=1.23200683 train_accuracy=0.5394
+W=64 lr=0.1 epoch=28/50 loss=1.06524564 train_accuracy=0.5855
+W=64 lr=0.1 epoch=29/50 loss=1.08437380 train_accuracy=0.5927
+W=64 lr=0.1 epoch=30/50 loss=0.99130179 train_accuracy=0.5887
+W=64 lr=0.1 epoch=31/50 loss=1.38438284 train_accuracy=0.5052
+W=64 lr=0.1 epoch=32/50 loss=1.01506293 train_accuracy=0.6054
+W=64 lr=0.1 epoch=33/50 loss=0.70921129 train_accuracy=0.7152
+W=64 lr=0.1 epoch=34/50 loss=0.57879021 train_accuracy=0.8019
+W=64 lr=0.1 epoch=35/50 loss=0.46467955 train_accuracy=0.8465
+W=64 lr=0.1 epoch=36/50 loss=0.88446934 train_accuracy=0.7128
+W=64 lr=0.1 epoch=37/50 loss=0.63272558 train_accuracy=0.8003
+W=64 lr=0.1 epoch=38/50 loss=0.42384150 train_accuracy=0.8656
+W=64 lr=0.1 epoch=39/50 loss=0.31949006 train_accuracy=0.8974
+W=64 lr=0.1 epoch=40/50 loss=0.54920142 train_accuracy=0.8075
+W=64 lr=0.1 epoch=41/50 loss=0.22276368 train_accuracy=0.9300
+W=64 lr=0.1 epoch=42/50 loss=0.46670189 train_accuracy=0.8266
+W=64 lr=0.1 epoch=43/50 loss=0.22454633 train_accuracy=0.9332
+W=64 lr=0.1 epoch=44/50 loss=0.23982998 train_accuracy=0.9228
+W=64 lr=0.1 epoch=45/50 loss=0.17935433 train_accuracy=0.9507
+W=64 lr=0.1 epoch=46/50 loss=0.36033597 train_accuracy=0.8687
+W=64 lr=0.1 epoch=47/50 loss=0.16231805 train_accuracy=0.9507
+W=64 lr=0.1 epoch=48/50 loss=0.16936685 train_accuracy=0.9467
+W=64 lr=0.1 epoch=49/50 loss=0.24888601 train_accuracy=0.9149
+W=64 lr=0.1 epoch=50/50 loss=0.16840474 train_accuracy=0.9467
+FINAL W=64 lr=0.1: test_accuracy=93.8889%, forward=107.229 µs, backward=121.521 µs
+Results saved to /Users/valeriahapilina/IDE/PyCharm/ml_73438/lab02/results
