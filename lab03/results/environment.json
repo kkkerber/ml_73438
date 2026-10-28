@@ -1,0 +1,23 @@
+{
+  "python": "3.11.8",
+  "platform": "macOS-15.7.1-arm64-arm-64bit",
+  "processor": "arm",
+  "torch": "2.3.1",
+  "device": "cpu",
+  "threads": 4,
+  "seed": 42,
+  "train": 55000,
+  "validation": 5000,
+  "test": 10000,
+  "mha_fastpath": false,
+  "epochs": 5,
+  "batch_size": 128,
+  "lr": 0.001,
+  "packages": {
+    "numpy": "1.26.4",
+    "torchvision": "0.18.1",
+    "torchinfo": "1.8.0",
+    "thop": "0.1.1-2209072238",
+    "matplotlib": "3.9.0"
+  }
+}
