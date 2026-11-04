@@ -1,0 +1,21 @@
+{
+  "conflicting_feature_groups": 5,
+  "rows_in_conflicting_groups": 10,
+  "conflicting_row_ids": [
+    1781,
+    2373,
+    11692,
+    15802,
+    16161,
+    17129,
+    27210,
+    32964,
+    39042,
+    45787
+  ],
+  "sample_size": 50,
+  "sample_seed": 42,
+  "sample_rows_with_automatic_issues": 0,
+  "review_sample": "label_review_sample.csv",
+  "manual_review": "See manual_review.md; automatic checks do not establish label truth."
+}

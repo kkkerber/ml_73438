@@ -1,0 +1,50 @@
+config:
+  dataset:
+    name: adult
+    version: 2
+    expected_rows: 48842
+    expected_columns: 15
+  split:
+    test_size: 0.3
+    random_state: 42
+  preprocessing:
+    numeric_imputation: median
+    categorical_imputation: most_frequent
+    lower_quantile: 0.01
+    upper_quantile: 0.99
+  model:
+    max_iter: 2000
+    solver: lbfgs
+    C: 1.0
+    random_state: 42
+  label_quality:
+    sample_size: 50
+    random_state: 42
+processed_dataset:
+  file: processed_dataset.csv
+  sha256: 69e0cbdaede0f4313cb13f28d4bf375346cabb30e384e502df2c4a5b50c30da5
+  rows: 48818
+  columns: 19
+  representation: Train then test; cleaned and clipped, with two derived features,
+    before scaling/encoding; row_id, split and income included.
+split:
+  train_before_dedup: 34189
+  train_duplicates_removed: 24
+  train_after_dedup: 34165
+  test_rows: 14653
+  cross_split_feature_overlap_rows: 27
+  train_class_counts:
+    <=50K: 25987
+    '>50K': 8178
+  test_class_counts:
+    <=50K: 11147
+    '>50K': 3506
+environment:
+  python: 3.11.8
+  packages:
+    numpy: 1.26.4
+    pandas: 2.2.2
+    scikit-learn: 1.5.0
+    scipy: 1.13.1
+    joblib: 1.4.2
+    PyYAML: 6.0.3

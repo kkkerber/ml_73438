@@ -1,0 +1,21 @@
+dataset:
+  name: adult
+  version: 2
+  expected_rows: 48842
+  expected_columns: 15
+split:
+  test_size: 0.3
+  random_state: 42
+preprocessing:
+  numeric_imputation: median
+  categorical_imputation: most_frequent
+  lower_quantile: 0.01
+  upper_quantile: 0.99
+model:
+  max_iter: 2000
+  solver: lbfgs
+  C: 1.0
+  random_state: 42
+label_quality:
+  sample_size: 50
+  random_state: 42

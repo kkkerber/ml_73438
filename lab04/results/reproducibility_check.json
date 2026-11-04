@@ -1,0 +1,12 @@
+{
+  "processed_hash_matches_manifest": true,
+  "two_runs_same_processed_hash": true,
+  "two_runs_same_metrics": true,
+  "review_sample_matches_documented_hash": true,
+  "no_missing_processed_values": true,
+  "all_original_test_rows_preserved": true,
+  "no_row_id_in_both_splits": true,
+  "baseline_saved_model_metrics_match": true,
+  "derived_features_saved_model_metrics_match": true,
+  "behavior_tests_passed": 6
+}

@@ -1,0 +1,9 @@
+Ingestion: 48842 rows, 15 columns
+Validation: 0 violations; 52 duplicate excess rows
+Split: train 34189 -> 34165 after removing 24 duplicates; test 14653
+Label audit: 5 conflicting feature groups; 10 rows
+         variant  train_rows  test_rows  input_features  encoded_features  accuracy       f1  iterations
+        baseline       34165      14653              14               105  0.853955 0.660102          61
+derived_features       34165      14653              16               107  0.857777 0.669626          75
+Processed SHA256: 69e0cbdaede0f4313cb13f28d4bf375346cabb30e384e502df2c4a5b50c30da5
+Results: /Users/valeriahapilina/IDE/PyCharm/ml_73438/lab04/results

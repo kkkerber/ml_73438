@@ -1,0 +1,36 @@
+{
+  "numeric_imputation": {
+    "age": 37.0,
+    "fnlwgt": 178272.0,
+    "education-num": 10.0,
+    "capital-gain": 0.0,
+    "capital-loss": 0.0,
+    "hours-per-week": 40.0
+  },
+  "categorical_imputation": {
+    "workclass": "Private",
+    "education": "HS-grad",
+    "marital-status": "Married-civ-spouse",
+    "occupation": "Prof-specialty",
+    "relationship": "Husband",
+    "race": "White",
+    "sex": "Male",
+    "native-country": "United-States"
+  },
+  "lower_clip_bounds": {
+    "age": 17.0,
+    "fnlwgt": 27035.2,
+    "education-num": 3.0,
+    "capital-gain": 0.0,
+    "capital-loss": 0.0,
+    "hours-per-week": 8.0
+  },
+  "upper_clip_bounds": {
+    "age": 74.0,
+    "fnlwgt": 509629.0,
+    "education-num": 16.0,
+    "capital-gain": 15024.0,
+    "capital-loss": 1980.0,
+    "hours-per-week": 80.0
+  }
+}

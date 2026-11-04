@@ -1,0 +1,189 @@
+{
+  "rows": 48842,
+  "columns": 15,
+  "missing_columns": [],
+  "unexpected_columns": [],
+  "types": {
+    "age": {
+      "expected": "int64",
+      "actual": "int64",
+      "matches": true
+    },
+    "workclass": {
+      "expected": "category",
+      "actual": "category",
+      "matches": true
+    },
+    "fnlwgt": {
+      "expected": "int64",
+      "actual": "int64",
+      "matches": true
+    },
+    "education": {
+      "expected": "category",
+      "actual": "category",
+      "matches": true
+    },
+    "education-num": {
+      "expected": "int64",
+      "actual": "int64",
+      "matches": true
+    },
+    "marital-status": {
+      "expected": "category",
+      "actual": "category",
+      "matches": true
+    },
+    "occupation": {
+      "expected": "category",
+      "actual": "category",
+      "matches": true
+    },
+    "relationship": {
+      "expected": "category",
+      "actual": "category",
+      "matches": true
+    },
+    "race": {
+      "expected": "category",
+      "actual": "category",
+      "matches": true
+    },
+    "sex": {
+      "expected": "category",
+      "actual": "category",
+      "matches": true
+    },
+    "capital-gain": {
+      "expected": "int64",
+      "actual": "int64",
+      "matches": true
+    },
+    "capital-loss": {
+      "expected": "int64",
+      "actual": "int64",
+      "matches": true
+    },
+    "hours-per-week": {
+      "expected": "int64",
+      "actual": "int64",
+      "matches": true
+    },
+    "native-country": {
+      "expected": "category",
+      "actual": "category",
+      "matches": true
+    },
+    "income": {
+      "expected": "category",
+      "actual": "category",
+      "matches": true
+    }
+  },
+  "ranges": {
+    "age": {
+      "lower": 17,
+      "upper": 90,
+      "violations": 0,
+      "row_ids": []
+    },
+    "hours-per-week": {
+      "lower": 1,
+      "upper": 99,
+      "violations": 0,
+      "row_ids": []
+    },
+    "capital-gain": {
+      "lower": 0,
+      "upper": 99999,
+      "violations": 0,
+      "row_ids": []
+    },
+    "capital-loss": {
+      "lower": 0,
+      "upper": 4356,
+      "violations": 0,
+      "row_ids": []
+    }
+  },
+  "categories": {
+    "workclass": {
+      "violations": 0,
+      "unexpected_values": []
+    },
+    "education": {
+      "violations": 0,
+      "unexpected_values": []
+    },
+    "marital-status": {
+      "violations": 0,
+      "unexpected_values": []
+    },
+    "occupation": {
+      "violations": 0,
+      "unexpected_values": []
+    },
+    "relationship": {
+      "violations": 0,
+      "unexpected_values": []
+    },
+    "race": {
+      "violations": 0,
+      "unexpected_values": []
+    },
+    "sex": {
+      "violations": 0,
+      "unexpected_values": []
+    },
+    "native-country": {
+      "violations": 0,
+      "unexpected_values": []
+    },
+    "income": {
+      "violations": 0,
+      "unexpected_values": []
+    }
+  },
+  "missing": {
+    "policy": "NaN and literal '?' mean missing; '?' is allowed in categorical fields. Missing labels stop training.",
+    "nan_counts": {
+      "age": 0,
+      "workclass": 2799,
+      "fnlwgt": 0,
+      "education": 0,
+      "education-num": 0,
+      "marital-status": 0,
+      "occupation": 2809,
+      "relationship": 0,
+      "race": 0,
+      "sex": 0,
+      "capital-gain": 0,
+      "capital-loss": 0,
+      "hours-per-week": 0,
+      "native-country": 857,
+      "income": 0
+    },
+    "question_mark_counts": {
+      "age": 0,
+      "workclass": 0,
+      "fnlwgt": 0,
+      "education": 0,
+      "education-num": 0,
+      "marital-status": 0,
+      "occupation": 0,
+      "relationship": 0,
+      "race": 0,
+      "sex": 0,
+      "capital-gain": 0,
+      "capital-loss": 0,
+      "hours-per-week": 0,
+      "native-country": 0,
+      "income": 0
+    }
+  },
+  "duplicates": {
+    "exact_duplicate_excess_rows": 52,
+    "rows_in_duplicate_groups": 101
+  },
+  "violation_count": 0
+}
