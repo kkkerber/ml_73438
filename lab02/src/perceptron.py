@@ -1,6 +1,6 @@
 """Lab 02: two-hidden-layer neural network, implemented with NumPy only.
 
-Run from any directory: python path/to/lab02/perceptron.py
+Run from any directory: python path/to/lab02/src/perceptron.py
 scikit-learn supplies only the dataset and stratified split, not the model.
 """
 
@@ -25,7 +25,7 @@ WIDTHS = (16, 64)
 LEARNING_RATES = (0.001, 0.01, 0.1)
 BATCH_SIZE = 32
 EPOCHS = 50
-RESULTS_DIR = Path(__file__).resolve().parent / "results"
+RESULTS_DIR = Path(__file__).resolve().parents[1] / "results"
 
 
 def prepare_data():
@@ -296,7 +296,7 @@ def write_report(summary, checks, initial_losses, environment):
               "using `expm1` and `log1p` before central differencing. Subtracting "
               "this constant leaves the mathematical gradient unchanged. "
               "Training uses stable log-softmax cross-entropy. Full analytical "
-              "and numerical values are in `results/gradient_checks.csv`.", "",
+              "and numerical values are in `gradient_checks.csv`.", "",
               "## 3. Training results", "",
               "| Width | Learning rate | Final train loss | Train accuracy | Test accuracy |",
               "|---:|---:|---:|---:|---:|"]
@@ -305,7 +305,7 @@ def write_report(summary, checks, initial_losses, environment):
                      f"{row['train_loss']:.6f} | {row['train_accuracy']:.2%} | "
                      f"{row['test_accuracy']:.2%} |")
     best = max(summary, key=lambda r: r["test_accuracy"])
-    lines += ["", "![Training loss curves](results/loss_curves.png)", "",
+    lines += ["", "![Training loss curves](loss_curves.png)", "",
               f"The highest observed test accuracy is {best['test_accuracy']:.2%} "
               f"at W={best['width']} and learning rate {best['learning_rate']:g}. "
               "This is a descriptive comparison of the six assigned experiments, "
@@ -321,7 +321,7 @@ def write_report(summary, checks, initial_losses, environment):
               "with `perf_counter_ns`. Backward uses a precomputed cache, so its "
               "measurement excludes forward propagation, loss evaluation and "
               "SGD updates. Forward includes softmax and cache construction. "
-              "Raw timings are in `results/timing_runs.csv`.", "",
+              "Raw timings are in `timing_runs.csv`.", "",
               "| Width | Learning rate | Forward (µs) | Backward (µs) | Backward/forward |",
               "|---:|---:|---:|---:|---:|"]
     for row in summary:
@@ -344,19 +344,19 @@ def write_report(summary, checks, initial_losses, environment):
               "These timings describe this machine and run, not a universal "
               "performance guarantee.", "", "## 5. Reproducibility", "",
               "Run from the repository root:", "", "```bash",
-              ".venv/bin/python lab02/perceptron.py", "",
+              ".venv/bin/python lab02/src/perceptron.py", "",
               "# Additional checks, including bias gradients and extreme logits:",
-              ".venv/bin/python -m unittest discover -s lab02 -p 'test_*.py' -v", "```", "",
+              ".venv/bin/python -m unittest discover -s lab02/src -p 'test_*.py' -v", "```", "",
               "The script writes all results relative to its own location, "
               "so it also works when launched from PyCharm with a different "
-              "working directory. `results/training_log.csv` contains all "
-              "300 epoch records; `results/summary.csv` contains final test "
-              "accuracy and timing for all six runs. `results/environment.json` "
+              "working directory. `training_log.csv` contains all "
+              "300 epoch records; `summary.csv` contains final test "
+              "accuracy and timing for all six runs. `environment.json` "
               "records the runtime versions.", "",
               f"Measured environment: Python {environment['python']}, "
               f"NumPy {environment['numpy']}, scikit-learn {environment['sklearn']}, "
               f"Matplotlib {environment['matplotlib']}; {environment['platform']}.", ""]
-    (RESULTS_DIR.parent / "report.md").write_text("\n".join(lines), encoding="utf-8")
+    (RESULTS_DIR / "report.md").write_text("\n".join(lines), encoding="utf-8")
 
 
 def main():

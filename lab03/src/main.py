@@ -1,4 +1,4 @@
-"""Lab 3: run the six assigned steps with python lab03/main.py."""
+"""Lab 3: run the six assigned steps with python lab03/src/main.py."""
 import copy
 import csv
 from importlib.metadata import version
@@ -21,7 +21,7 @@ from torchvision import datasets, transforms
 from torchinfo import summary
 from thop import profile
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 RESULTS = ROOT / "results"
 SEED = 42
 

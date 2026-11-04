@@ -19,7 +19,7 @@ Both initial losses are close to ln(10) = 2.302585. Assertions check the output 
 
 For each width, 10 distinct random weights across all three layers are perturbed by ±1e-5. Relative error is `abs(analytic - numeric) / (abs(analytic) + abs(numeric))`; zero/zero is defined as zero. At least 9/10 must be below 1e-6 or execution fails. No failing weights are discarded.
 
-With the required small initialization, some slopes are tiny. Subtracting two ordinary float64 losses near 2.3026 loses precision. The numerical check therefore evaluates CE − ln(10) using `expm1` and `log1p` before central differencing. Subtracting this constant leaves the mathematical gradient unchanged. Training uses stable log-softmax cross-entropy. Full analytical and numerical values are in `results/gradient_checks.csv`.
+With the required small initialization, some slopes are tiny. Subtracting two ordinary float64 losses near 2.3026 loses precision. The numerical check therefore evaluates CE − ln(10) using `expm1` and `log1p` before central differencing. Subtracting this constant leaves the mathematical gradient unchanged. Training uses stable log-softmax cross-entropy. Full analytical and numerical values are in `gradient_checks.csv`.
 
 ## 3. Training results
 
@@ -32,7 +32,7 @@ With the required small initialization, some slopes are tiny. Subtracting two or
 | 64 | 0.01 | 2.302343 | 10.18% | 10.19% |
 | 64 | 0.1 | 0.168405 | 94.67% | 93.89% |
 
-![Training loss curves](results/loss_curves.png)
+![Training loss curves](loss_curves.png)
 
 The highest observed test accuracy is 93.89% at W=64 and learning rate 0.1. This is a descriptive comparison of the six assigned experiments, not an independent validation-based model selection.
 
@@ -40,7 +40,7 @@ Small learning rates can remain near the uniform-prediction loss within 50 epoch
 
 ## 4. Forward and backward timing
 
-Each trained model is timed on the same batch of 32 images. After 10 warm-up iterations, the median of 100 runs is recorded with `perf_counter_ns`. Backward uses a precomputed cache, so its measurement excludes forward propagation, loss evaluation and SGD updates. Forward includes softmax and cache construction. Raw timings are in `results/timing_runs.csv`.
+Each trained model is timed on the same batch of 32 images. After 10 warm-up iterations, the median of 100 runs is recorded with `perf_counter_ns`. Backward uses a precomputed cache, so its measurement excludes forward propagation, loss evaluation and SGD updates. Forward includes softmax and cache construction. Raw timings are in `timing_runs.csv`.
 
 | Width | Learning rate | Forward (µs) | Backward (µs) | Backward/forward |
 |---:|---:|---:|---:|---:|
@@ -58,12 +58,12 @@ Backward is slower in 6 of the 6 measured configurations. Forward uses three mat
 Run from the repository root:
 
 ```bash
-.venv/bin/python lab02/perceptron.py
+.venv/bin/python lab02/src/perceptron.py
 
 # Additional checks, including bias gradients and extreme logits:
-.venv/bin/python -m unittest discover -s lab02 -p 'test_*.py' -v
+.venv/bin/python -m unittest discover -s lab02/src -p 'test_*.py' -v
 ```
 
-The script writes all results relative to its own location, so it also works when launched from PyCharm with a different working directory. `results/training_log.csv` contains all 300 epoch records; `results/summary.csv` contains final test accuracy and timing for all six runs. `results/environment.json` records the runtime versions.
+The script writes all results relative to its own location, so it also works when launched from PyCharm with a different working directory. `training_log.csv` contains all 300 epoch records; `summary.csv` contains final test accuracy and timing for all six runs. `environment.json` records the runtime versions.
 
 Measured environment: Python 3.11.8, NumPy 1.26.4, scikit-learn 1.5.0, Matplotlib 3.9.0; macOS-15.7.1-arm64-arm-64bit.

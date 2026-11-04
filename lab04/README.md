@@ -22,9 +22,9 @@ The second command executes the entire experiment. Paths are resolved relative t
 - `src/evaluation.py`: the two fixed LogisticRegression experiments.
 - `src/label_quality.py`: conflicting-label audit and seeded 50-row sample.
 - `src/reporting.py`: hashes, run configuration, fitted parameters and report.
-- `tests/`: behavior checks for leakage and serialization.
+- `src/tests/`: behavior checks for leakage and serialization.
 - `config.yaml`: reproducible experiment settings.
-- `problem_definition.md`, `data_card.md`, `report.md`: written evidence.
+- `results/problem_definition.md`, `results/data_card.md`, `results/report.md`: written evidence.
 - `results/`: generated reports, models, CSVs and logs.
 
 ## Order of operations
@@ -38,7 +38,7 @@ Test receives only transforms, never fitting or row deletion. No parameters are 
 ## Validation and tests
 
 ```bash
-.venv/bin/python -m pytest lab04/tests -q
+.venv/bin/python -m pytest lab04/src/tests -q
 ```
 
 The validation report includes all required types, ranges, NaN/`?` counts, allowed categories and duplicate counts. Structural violations stop the run after the report is saved. Expected missing feature values and duplicates are recorded and processed as specified, rather than treated as fatal schema errors.

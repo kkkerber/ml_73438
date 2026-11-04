@@ -10,15 +10,15 @@ UCI lists [Creative Commons Attribution 4.0 International](https://creativecommo
 
 ## Size and fields
 
-The requested OpenML version contains 48,842 rows, 14 input features (six numeric and eight categorical) and a binary income label. The positive label is `>50K`; the other label is `<=50K`. OpenML calls the target `class`; the lab calls it `income`. Feature names and allowed categorical values are defined in `src/schema.py`.
+The requested OpenML version contains 48,842 rows, 14 input features (six numeric and eight categorical) and a binary income label. The positive label is `>50K`; the other label is `<=50K`. OpenML calls the target `class`; the lab calls it `income`. Feature names and allowed categorical values are defined in `../src/schema.py`.
 
-The fixed stratified split allocates 34,189 rows to train and 14,653 to test before training deduplication. Actual retained counts and class frequencies are in `results/config.yaml`; metrics are in `results/metrics.csv`.
+The fixed stratified split allocates 34,189 rows to train and 14,653 to test before training deduplication. Actual retained counts and class frequencies are in `config.yaml`; metrics are in `metrics.csv`.
 
 ## Missingness and quality
 
 OpenML represents missing source markers as NaN. The policy also recognizes literal `?` as missing and allows it in categorical validation. Missing counts in this version are 2,799 for workclass, 2,809 for occupation and 857 for native-country. Other fields have no missing values. The full raw dataset contains 52 excess exact duplicates. No records are discarded during validation.
 
-Schema, category and lab-specified range checks are in `results/validation_report.json`. Training-only imputation uses numeric medians and categorical modes; training-only 1st/99th percentile thresholds clip numeric features. The final transformer scales numeric inputs and one-hot encodes categorical inputs. Derived features are calculated after clipping. Exact training duplicates include the label in their key. Feature duplicates with conflicting labels are audited separately and retained.
+Schema, category and lab-specified range checks are in `validation_report.json`. Training-only imputation uses numeric medians and categorical modes; training-only 1st/99th percentile thresholds clip numeric features. The final transformer scales numeric inputs and one-hot encodes categorical inputs. Derived features are calculated after clipping. Exact training duplicates include the label in their key. Feature duplicates with conflicting labels are audited separately and retained.
 
 ## Known biases and limitations
 
@@ -32,4 +32,4 @@ Records include income and demographic attributes. Even without direct names, co
 
 ## Reproducibility and storage
 
-`config.yaml` defines the experiment. `results/config.yaml` saves its effective values, package versions, row counts and SHA256 of the exact `results/processed_dataset.csv` bytes. That CSV contains train then test, source row IDs, split names, cleaned/clipped values, derived features and income, before scaling/one-hot encoding. The transformer is `results/preprocessor.joblib`; only load trusted joblib files. Initial OpenML retrieval needs internet; subsequent runs use its local cache. `results/label_review_sample.csv` stores the seeded 50-row review sample; review scope is documented in `results/manual_review.md`.
+`../config.yaml` defines the experiment. `config.yaml` saves its effective values, package versions, row counts and SHA256 of the exact `processed_dataset.csv` bytes. That CSV contains train then test, source row IDs, split names, cleaned/clipped values, derived features and income, before scaling/one-hot encoding. The transformer is `preprocessor.joblib`; only load trusted joblib files. Initial OpenML retrieval needs internet; subsequent runs use its local cache. `label_review_sample.csv` stores the seeded 50-row review sample; review scope is documented in `manual_review.md`.

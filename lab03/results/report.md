@@ -18,11 +18,13 @@ Parameter counts from `torchinfo.summary`, including biases and normalization pa
 | CNN | 20,490 |
 | Attention | 70,794 |
 
-The requested 100k–150k target conflicts with the explicit architectures. The layer definitions are preserved exactly, so this comparison does not control for equal parameter counts. Full summaries are saved in `results/*_summary.txt`; their parameter totals are checked against `sum(p.numel() for p in model.parameters())`.
+The requested 100k–150k target conflicts with the explicit architectures. The layer definitions are preserved exactly, so this comparison does not control for equal parameter counts. Full summaries are saved in `*_summary.txt`; their parameter totals are checked against `sum(p.numel() for p in model.parameters())`.
 
 ## 3. Compute cost and inference latency
 
 ### Hand calculations
+
+Handwritten pages: [page 1](hand_calculations/page_1.jpg), [page 2](hand_calculations/page_2.jpg).
 
 One multiplication and one addition count as two FLOPs. Calculations use one image and count matrix products and convolutions; biases, activation functions, pooling, normalization, residual additions, softmax and mean pooling are excluded.
 
@@ -65,7 +67,7 @@ All models run in evaluation mode under `torch.inference_mode()`, using float32 
 | CNN | 89.18% | 0.4299 | 15.7953 | 0.12340 |
 | Attention | 83.38% | 0.6474 | 6.6600 | 0.05203 |
 
-Raw measurements are in `results/timing_runs.csv`. Batch latency and per-image latency are different quantities; batching amortizes overhead and improves matrix utilization.
+Raw measurements are in `timing_runs.csv`. Batch latency and per-image latency are different quantities; batching amortizes overhead and improves matrix utilization.
 
 ## 4. Training
 
@@ -89,13 +91,13 @@ Each model is trained from scratch for exactly 5 epochs with Adam, learning rate
 | Attention | 4 | 0.4495 | 84.10% |
 | Attention | 5 | 0.4283 | 84.02% |
 
-Final test accuracies are in the table in section 3 and `results/summary.csv`. The complete training log is in `results/training_log.csv`.
+Final test accuracies are in the table in section 3 and `summary.csv`. The complete training log is in `training_log.csv`.
 
 ## 5. Accuracy and cost trade-offs
 
-![Accuracy against parameters](results/accuracy_parameters.png)
+![Accuracy against parameters](accuracy_parameters.png)
 
-![Accuracy against inference latency](results/accuracy_latency.png)
+![Accuracy against inference latency](accuracy_latency.png)
 
 The CNN reuses each small convolution kernel across spatial locations and uses local receptive fields. Pooling reduces feature-map dimensions before the classifier. This gives substantial weight reuse and a small parameter footprint, although intermediate feature maps and convolution work still contribute to latency. Dense MLP layers use regular matrix products, which become more efficient with batching. At batch 1, the large first weight matrix has relatively little reuse across examples; flattening also removes the explicit local image structure.
 
@@ -108,7 +110,7 @@ These access patterns explain why fewer weights or FLOPs do not guarantee lower 
 Run from the repository root:
 
 ```bash
-.venv/bin/python lab03/main.py
+.venv/bin/python lab03/src/main.py
 ```
 
-Environment: Python 3.11.8, PyTorch 2.3.1, macOS 15.7.1 arm64, CPU, four threads, seed 42. Runtime settings and split sizes are recorded in `results/environment.json`. The implementation, report and measured results are committed together.
+Environment: Python 3.11.8, PyTorch 2.3.1, macOS 15.7.1 arm64, CPU, four threads, seed 42. Runtime settings and split sizes are recorded in `environment.json`. The implementation, report and measured results are committed together.

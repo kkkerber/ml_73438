@@ -42,7 +42,7 @@ def persist_run(results, config, validation, labels, split, metrics, processed):
         "## 2. Ingestion and validation", "",
         f"Loaded {validation['rows']} rows and {validation['columns']} columns (14 inputs plus income). Raw data were not cleaned in ingestion.",
         "The OpenML target `class` is exposed as `income` to match the lab schema.",
-        "All declared types, categorical values and four assigned ranges were checked. See results/validation_report.json for counts and violating row IDs.",
+        "All declared types, categorical values and four assigned ranges were checked. See validation_report.json for counts and violating row IDs.",
         f"Schema/range/category violations: {validation['violation_count']}. No invalid rows were silently dropped.",
         f"Missing values: {validation['missing']['nan_counts']}. Literal '?': {validation['missing']['question_mark_counts']}.",
         f"Exact duplicate excess rows in the full raw dataset: {validation['duplicates']['exact_duplicate_excess_rows']}.", "",
@@ -52,7 +52,7 @@ def persist_run(results, config, validation, labels, split, metrics, processed):
         "The test membership and raw values were preserved. Test rows receive the fitted transformations for prediction, but none are dropped or used to fit preprocessing.",
         "Numeric medians, categorical modes, 1st/99th percentile clipping thresholds, scaling and one-hot categories were fitted on training data only.",
         "Imputation precedes clipping. Derived features are calculated from the cleaned/clipped inputs. Unseen test categories are ignored by the encoder.",
-        "Stored fitted parameters: results/fitted_cleaner.json. Final fitted transformer: results/preprocessor.joblib.",
+        "Stored fitted parameters: fitted_cleaner.json. Final fitted transformer: preprocessor.joblib.",
         f"Exact feature vectors present across train/test: {split['cross_split_feature_overlap_rows']}. The assignment's row-wise split permits these natural duplicates; this can make performance optimistic. No test-driven grouping or deletion was performed.", "",
         "## 4. Feature comparison", "",
         "Added capital_net = capital-gain - capital-loss and hours_per_age = hours-per-week / (age - 16).", "",
@@ -66,13 +66,13 @@ def persist_run(results, config, validation, labels, split, metrics, processed):
               "The comparison is descriptive; this single split does not establish a statistically reliable improvement.", "",
               "## 5. Label quality", "",
               f"Found {labels['conflicting_feature_groups']} feature groups with conflicting income labels, containing {labels['rows_in_conflicting_groups']} rows.",
-              "Conflicts are recorded in results/label_conflicts.csv and retained; there is no independent evidence to choose a correct label.",
+              "Conflicts are recorded in label_conflicts.csv and retained; there is no independent evidence to choose a correct label.",
               f"Drew {labels['sample_size']} raw rows with seed {labels['sample_seed']}; {labels['sample_rows_with_automatic_issues']} rows failed the automatic dictionary checks.",
-              "The sample and notes are in results/label_review_sample.csv and results/manual_review.md. Dictionary plausibility does not verify actual income labels.", "",
+              "The sample and notes are in label_review_sample.csv and manual_review.md. Dictionary plausibility does not verify actual income labels.", "",
               "## 6. Reproducibility", "",
-              "Run `.venv/bin/python lab04/src/main.py` from the repository root. See README.md for setup and tests.",
+              "Run `.venv/bin/python lab04/src/main.py` from the repository root. See [README.md](../README.md) for setup and tests.",
               f"Processed CSV SHA256: `{digest}`.",
-              "The exact representation is documented in results/config.yaml. The effective configuration and package versions are stored alongside the hash.",
+              "The exact representation is documented in config.yaml. The effective configuration and package versions are stored alongside the hash.",
               "See data_card.md for provenance, license, missingness, biases and privacy limitations.", ""]
-    (results.parent / "report.md").write_text("\n".join(lines), encoding="utf-8")
+    (results / "report.md").write_text("\n".join(lines), encoding="utf-8")
     return digest
