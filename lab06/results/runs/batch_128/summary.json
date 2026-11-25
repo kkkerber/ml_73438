@@ -1,0 +1,15 @@
+{
+  "name": "batch_128",
+  "epochs": 5,
+  "batch_size": 128,
+  "num_workers": 0,
+  "accumulation": 1,
+  "optimizer": "Adam",
+  "scheduler": "StepLR",
+  "throughput": 5064.339408964941,
+  "peak_tree_rss_mb": 607.289344,
+  "final_val_accuracy": 0.9014,
+  "test_accuracy": 0.8974,
+  "test_loss": 0.28671669120788573,
+  "run_id": "ed8ba89bf179492abea0b048990f9bb1"
+}

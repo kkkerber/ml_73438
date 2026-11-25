@@ -1,0 +1,20 @@
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+workers_8 {"epoch": 1, "lr": 0.001, "train_loss": 0.5294914484891025, "train_accuracy": 0.8133454545454546, "train_seconds": 9.074521665999782, "throughput": 6060.925525812869, "val_loss": 0.43922213439941404, "val_accuracy": 0.8478, "peak_tree_rss_mb": 2798.813184}
+workers_8 {"epoch": 2, "lr": 0.001, "train_loss": 0.3487588138580322, "train_accuracy": 0.875890909090909, "train_seconds": 8.89315858399641, "throughput": 6184.5293188603055, "val_loss": 0.34458948364257813, "val_accuracy": 0.8772, "peak_tree_rss_mb": 2825.17504}

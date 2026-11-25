@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/valeriahapilina/IDE/PyCharm/ml_73438/lab06/results/mlruns/723021657682040459/d4a0fc992fef4bf1b92677472360daa3/artifacts
+end_time: 1795607342912
+entry_point_name: ''
+experiment_id: '723021657682040459'
+lifecycle_stage: active
+run_id: d4a0fc992fef4bf1b92677472360daa3
+run_name: profile
+run_uuid: d4a0fc992fef4bf1b92677472360daa3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1795606962068
+status: 5
+tags: []
+user_id: valeriahapilina

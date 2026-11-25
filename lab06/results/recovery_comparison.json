@@ -1,0 +1,8 @@
+{
+  "max_absolute_weight_difference": 0.0,
+  "max_absolute_curve_difference": 0.0,
+  "bitwise_equal_model": true,
+  "same_scheduler_state": true,
+  "same_shuffle_generator_state": true,
+  "same_torch_rng_state": true
+}

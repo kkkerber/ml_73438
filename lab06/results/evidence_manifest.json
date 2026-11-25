@@ -1,0 +1,34 @@
+{
+  "required_completed_runs": 20,
+  "run_ids": {
+    "workers_0": "c0e97f6810264cb98e754fea3c967685",
+    "workers_1": "2bb9254151e049abbfa6557724adabac",
+    "workers_2": "17f5dca8a6724d7c97de27ad91b3a995",
+    "workers_4": "c11f4555089b44e587230b31cba63cff",
+    "workers_8": "3792ba26a98840ecb35c1710eee19ff8",
+    "batch_32": "4df6343fbc304519926c41f8eff575c7",
+    "batch_64": "1bc22ffe33e748078b6f5b05088c017e",
+    "batch_128": "ed8ba89bf179492abea0b048990f9bb1",
+    "batch_256": "4a47a34b9ad64ab7bd5250e30fa3c414",
+    "batch_512": "1f76c0d58fde48e088aff9c8d609232a",
+    "SGD_StepLR": "a95e646391f541f5a30463d3f33d8211",
+    "SGD_CosineAnnealingLR": "36a70627fa5d4f0ba4f068a87e406805",
+    "SGD_ReduceLROnPlateau": "66dc2c334e8543648eec00323ce94466",
+    "Adam_StepLR": "e50cf3f48c044b7e8f6ba65461955012",
+    "Adam_CosineAnnealingLR": "0fd35b2562054ecea9326f5061cfc183",
+    "Adam_ReduceLROnPlateau": "c3e449f4951c4b2da78203def9c5640a",
+    "accumulation_64x4": "8309bc905feb40ee913098474e6172e6",
+    "recovery_reference": "00afe80df6354a7eba00847711ce169f",
+    "recovery_resumed": "c36fc3539073414483385825fd882303",
+    "profile": "30f0529aa5604b2b9d230b6704b0303a"
+  },
+  "source_sha256": {
+    "lab06/src/relocate_mlflow.py": "a8693826c8e1482fa6e86d69ab778e4bfaf4bbe7652b2dcfdf98d87001ec0234",
+    "lab06/src/render_proposal.py": "4aa71e93cee916ba40b3752cb360c281080da52b05b08fe1d801a9faaf0f1ee5",
+    "lab06/src/report.py": "8c55019f685233e9e57628e352be198d327f6c80bf9aa4b5f6e009077d515896",
+    "lab06/src/studies.py": "c25341b37a48a6a4534177807a4b93bb2135d6b16c93893c88ae15c4e5ce5b3e",
+    "lab06/src/test_training.py": "7844f42936bd1e494e9906dfa2777e2920036b2a59573ae5815b3059e3ca1bf9",
+    "lab06/src/train.py": "ef7b18aca7c5d74af15eeef4eac63b104721f9b8dafa284aab2999b3ffbbe7ff"
+  },
+  "mlflow_status_metrics_artifacts_verified": true
+}

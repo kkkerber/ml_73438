@@ -1,0 +1,15 @@
+{
+  "name": "Adam_CosineAnnealingLR",
+  "epochs": 10,
+  "batch_size": 128,
+  "num_workers": 0,
+  "accumulation": 1,
+  "optimizer": "Adam",
+  "scheduler": "CosineAnnealingLR",
+  "throughput": 4888.447891228322,
+  "peak_tree_rss_mb": 622.854144,
+  "final_val_accuracy": 0.9066,
+  "test_accuracy": 0.9018,
+  "test_loss": 0.26964771041870117,
+  "run_id": "0fd35b2562054ecea9326f5061cfc183"
+}

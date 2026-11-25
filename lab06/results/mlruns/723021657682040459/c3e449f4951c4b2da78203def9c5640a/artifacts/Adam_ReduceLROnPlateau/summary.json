@@ -1,0 +1,15 @@
+{
+  "name": "Adam_ReduceLROnPlateau",
+  "epochs": 10,
+  "batch_size": 128,
+  "num_workers": 0,
+  "accumulation": 1,
+  "optimizer": "Adam",
+  "scheduler": "ReduceLROnPlateau",
+  "throughput": 4664.505950151552,
+  "peak_tree_rss_mb": 578.420736,
+  "final_val_accuracy": 0.903,
+  "test_accuracy": 0.8982,
+  "test_loss": 0.2779530818939209,
+  "run_id": "c3e449f4951c4b2da78203def9c5640a"
+}

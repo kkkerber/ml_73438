@@ -1,0 +1,6 @@
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+workers_1 {"epoch": 1, "lr": 0.001, "train_loss": 0.5294914484891025, "train_accuracy": 0.8133454545454546, "train_seconds": 17.407009875001677, "throughput": 3159.6466248339334, "val_loss": 0.43922213439941404, "val_accuracy": 0.8478, "peak_tree_rss_mb": 950.403072}
+workers_1 {"epoch": 2, "lr": 0.001, "train_loss": 0.3487588138580322, "train_accuracy": 0.875890909090909, "train_seconds": 9.928126875005546, "throughput": 5539.81639159595, "val_loss": 0.34458948364257813, "val_accuracy": 0.8772, "peak_tree_rss_mb": 950.403072}

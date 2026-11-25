@@ -1,0 +1,15 @@
+{
+  "name": "SGD_ReduceLROnPlateau",
+  "epochs": 10,
+  "batch_size": 128,
+  "num_workers": 0,
+  "accumulation": 1,
+  "optimizer": "SGD",
+  "scheduler": "ReduceLROnPlateau",
+  "throughput": 4733.911162491555,
+  "peak_tree_rss_mb": 526.7456,
+  "final_val_accuracy": 0.9018,
+  "test_accuracy": 0.9013,
+  "test_loss": 0.2765836223602295,
+  "run_id": "66dc2c334e8543648eec00323ce94466"
+}

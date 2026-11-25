@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/valeriahapilina/IDE/PyCharm/ml_73438/lab06/results/mlruns/723021657682040459/c3e449f4951c4b2da78203def9c5640a/artifacts
+end_time: 1795608352509
+entry_point_name: ''
+experiment_id: '723021657682040459'
+lifecycle_stage: active
+run_id: c3e449f4951c4b2da78203def9c5640a
+run_name: Adam_ReduceLROnPlateau
+run_uuid: c3e449f4951c4b2da78203def9c5640a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1795608229348
+status: 3
+tags: []
+user_id: valeriahapilina

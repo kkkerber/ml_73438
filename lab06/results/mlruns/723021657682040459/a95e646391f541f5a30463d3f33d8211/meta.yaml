@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/valeriahapilina/IDE/PyCharm/ml_73438/lab06/results/mlruns/723021657682040459/a95e646391f541f5a30463d3f33d8211/artifacts
+end_time: 1795607720678
+entry_point_name: ''
+experiment_id: '723021657682040459'
+lifecycle_stage: active
+run_id: a95e646391f541f5a30463d3f33d8211
+run_name: SGD_StepLR
+run_uuid: a95e646391f541f5a30463d3f33d8211
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1795607594525
+status: 3
+tags: []
+user_id: valeriahapilina

@@ -1,0 +1,15 @@
+{
+  "name": "SGD_StepLR",
+  "epochs": 10,
+  "batch_size": 128,
+  "num_workers": 0,
+  "accumulation": 1,
+  "optimizer": "SGD",
+  "scheduler": "StepLR",
+  "throughput": 4535.532959340257,
+  "peak_tree_rss_mb": 523.436032,
+  "final_val_accuracy": 0.9016,
+  "test_accuracy": 0.9021,
+  "test_loss": 0.2732697322845459,
+  "run_id": "a95e646391f541f5a30463d3f33d8211"
+}

@@ -1,0 +1,27 @@
+seed: 42
+model: lab03_cnn
+device: cpu
+threads: 4
+data:
+  root: data
+  train_size: 55000
+  val_size: 5000
+  normalization:
+  - 0.286
+  - 0.353
+training:
+  epochs: 2
+  batch_size: 128
+  num_workers: 1
+  accumulation: 1
+  optimizer: Adam
+  lr: 0.001
+  momentum: 0.9
+  scheduler: StepLR
+  step_size: 4
+  gamma: 0.5
+  plateau_patience: 1
+tracking:
+  experiment: lab06
+  store: lab06/results/mlruns
+output: lab06/results/runs

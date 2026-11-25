@@ -1,0 +1,48 @@
+{
+  "train_source_images": {
+    "shape": [
+      60000,
+      28,
+      28
+    ],
+    "dtype": "uint8",
+    "sha256": "2e487a6c89124f78f2d7521542223cafe96f7123c3ca13d447772ac6ecbb3012"
+  },
+  "train_source_labels": {
+    "shape": [
+      60000
+    ],
+    "dtype": "int64",
+    "sha256": "e3245b63f7c40d1c8b652835f19744d970c1613b40ddac6bcfc87b9c46e16a0b"
+  },
+  "test_images": {
+    "shape": [
+      10000,
+      28,
+      28
+    ],
+    "dtype": "uint8",
+    "sha256": "c867c93ff95360594e8ec3287995350b824dd110b11595c0e13d5423f621867a"
+  },
+  "test_labels": {
+    "shape": [
+      10000
+    ],
+    "dtype": "int64",
+    "sha256": "d51d859896c55775b9e9e219b77ff03bcec1b6ac322f313544dc3f9e7bc94fae"
+  },
+  "train_indices": {
+    "shape": [
+      55000
+    ],
+    "dtype": "int64",
+    "sha256": "5a90776050dd386793d0cdc11f2d2eb4fbe8eb37f61a376d4228275e5a1fb0c1"
+  },
+  "validation_indices": {
+    "shape": [
+      5000
+    ],
+    "dtype": "int64",
+    "sha256": "a26af046450eeeac4ef09b98508d79c0dd47c6c4ba416a2da3a75003340369bb"
+  }
+}

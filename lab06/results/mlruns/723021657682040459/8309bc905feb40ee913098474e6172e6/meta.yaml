@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/valeriahapilina/IDE/PyCharm/ml_73438/lab06/results/mlruns/723021657682040459/8309bc905feb40ee913098474e6172e6/artifacts
+end_time: 1795608422657
+entry_point_name: ''
+experiment_id: '723021657682040459'
+lifecycle_stage: active
+run_id: 8309bc905feb40ee913098474e6172e6
+run_name: accumulation_64x4
+run_uuid: 8309bc905feb40ee913098474e6172e6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1795608355304
+status: 3
+tags: []
+user_id: valeriahapilina

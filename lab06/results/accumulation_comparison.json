@@ -1,0 +1,7 @@
+{
+  "max_train_loss_difference": 9.454037926409642e-05,
+  "max_val_accuracy_difference": 0.00040000000000006697,
+  "loss_tolerance": 0.02,
+  "accuracy_tolerance": 0.01,
+  "similar": true
+}

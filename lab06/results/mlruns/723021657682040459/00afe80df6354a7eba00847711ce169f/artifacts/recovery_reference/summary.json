@@ -1,0 +1,15 @@
+{
+  "name": "recovery_reference",
+  "epochs": 5,
+  "batch_size": 128,
+  "num_workers": 0,
+  "accumulation": 1,
+  "optimizer": "Adam",
+  "scheduler": "StepLR",
+  "throughput": 4312.116692894105,
+  "peak_tree_rss_mb": 525.27104,
+  "final_val_accuracy": 0.9014,
+  "test_accuracy": 0.8974,
+  "test_loss": 0.28671669120788573,
+  "run_id": "00afe80df6354a7eba00847711ce169f"
+}

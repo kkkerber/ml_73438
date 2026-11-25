@@ -1,0 +1,12 @@
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+workers_4 {"epoch": 1, "lr": 0.001, "train_loss": 0.5294914484891025, "train_accuracy": 0.8133454545454546, "train_seconds": 9.3960711250038, "throughput": 5853.510394747864, "val_loss": 0.43922213439941404, "val_accuracy": 0.8478, "peak_tree_rss_mb": 1766.916096}
+workers_4 {"epoch": 2, "lr": 0.001, "train_loss": 0.3487588138580322, "train_accuracy": 0.875890909090909, "train_seconds": 8.866796375004924, "throughput": 6202.9167778164365, "val_loss": 0.34458948364257813, "val_accuracy": 0.8772, "peak_tree_rss_mb": 1776.828416}

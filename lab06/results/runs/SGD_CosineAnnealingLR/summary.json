@@ -1,0 +1,15 @@
+{
+  "name": "SGD_CosineAnnealingLR",
+  "epochs": 10,
+  "batch_size": 128,
+  "num_workers": 0,
+  "accumulation": 1,
+  "optimizer": "SGD",
+  "scheduler": "CosineAnnealingLR",
+  "throughput": 5027.988415627789,
+  "peak_tree_rss_mb": 525.172736,
+  "final_val_accuracy": 0.905,
+  "test_accuracy": 0.9041,
+  "test_loss": 0.2727304893493652,
+  "run_id": "36a70627fa5d4f0ba4f068a87e406805"
+}

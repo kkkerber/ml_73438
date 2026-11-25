@@ -1,0 +1,15 @@
+{
+  "name": "profile",
+  "epochs": 1,
+  "batch_size": 128,
+  "num_workers": 0,
+  "accumulation": 1,
+  "optimizer": "Adam",
+  "scheduler": "StepLR",
+  "throughput": 277.081091426368,
+  "peak_tree_rss_mb": 617.43104,
+  "final_val_accuracy": 0.8478,
+  "test_accuracy": 0.8391,
+  "test_loss": 0.4428169853210449,
+  "run_id": "30f0529aa5604b2b9d230b6704b0303a"
+}

@@ -1,0 +1,7 @@
+optimizer,scheduler,epochs,throughput,final_val_accuracy,test_accuracy
+SGD,StepLR,10,4535.532959340257,0.9016,0.9021
+SGD,CosineAnnealingLR,10,5027.988415627789,0.905,0.9041
+SGD,ReduceLROnPlateau,10,4733.911162491555,0.9018,0.9013
+Adam,StepLR,10,4073.4644939019176,0.9102,0.9042
+Adam,CosineAnnealingLR,10,4888.447891228322,0.9066,0.9018
+Adam,ReduceLROnPlateau,10,4664.505950151552,0.903,0.8982

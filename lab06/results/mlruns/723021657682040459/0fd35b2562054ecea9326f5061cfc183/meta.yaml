@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/valeriahapilina/IDE/PyCharm/ml_73438/lab06/results/mlruns/723021657682040459/0fd35b2562054ecea9326f5061cfc183/artifacts
+end_time: 1795608226155
+entry_point_name: ''
+experiment_id: '723021657682040459'
+lifecycle_stage: active
+run_id: 0fd35b2562054ecea9326f5061cfc183
+run_name: Adam_CosineAnnealingLR
+run_uuid: 0fd35b2562054ecea9326f5061cfc183
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1795608108616
+status: 3
+tags: []
+user_id: valeriahapilina

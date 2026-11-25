@@ -1,0 +1,101 @@
+operator,cpu_us,self_cpu_us,calls
+aten::convolution_backward,5735735.0,5390006.0,860
+enumerate(DataLoader)#_SingleProcessDataLoaderIter.__next__,3370188.0,2738351.0,430
+aten::_nnpack_spatial_convolution,1316946.0,1229100.0,860
+aten::max_pool2d_with_indices,693594.0,693594.0,860
+aten::sum,315956.0,309590.0,110937
+aten::_to_copy,247283.0,183066.0,178330
+aten::threshold_backward,162992.0,162992.0,860
+aten::fill_,154743.0,154743.0,461952
+aten::clamp_min,115540.0,115540.0,860
+aten::max_pool2d_with_indices_backward,185140.0,111033.0,860
+phase/backward,6230192.0,77351.0,430
+phase/optimizer,203716.0,73525.0,430
+aten::div,141023.0,69722.0,57580
+Optimizer.step#Adam.step,115853.0,68513.0,430
+aten::eq,133499.0,67415.0,55430
+aten::empty_strided,64959.0,62472.0,233772
+aten::any,65733.0,62398.0,55000
+aten::clone,61997.0,57724.0,55000
+aten::to,254340.0,51853.0,399196
+aten::select,53510.0,51546.0,385000
+phase/forward,2263271.0,44778.0,430
+aten::addmm,31312.0,29048.0,430
+aten::permute,22739.0,22700.0,55000
+aten::mm,17644.0,17639.0,860
+aten::max_pool2d,695084.0,16079.0,860
+aten::empty,92033.0,13910.0,115168
+aten::cat,14227.0,12648.0,430
+phase/data_loading,3382297.0,12109.0,430
+aten::zero_,63762.0,11021.0,3021
+MaxPool2DWithIndicesBackward0,186690.0,10464.0,860
+aten::add_,17128.0,10461.0,115160
+aten::sqrt,10189.0,10189.0,2580
+aten::_log_softmax,8627.0,8627.0,430
+aten::convolution,1330393.0,7690.0,860
+aten::div_,11774.0,6482.0,57580
+aten::copy_,6422.0,6422.0,288760
+ConvolutionBackward0,5737967.0,6346.0,860
+aten::_convolution,1322703.0,5747.0,860
+aten::relu,120607.0,5067.0,860
+aten::as_strided,4664.0,4664.0,553866
+ReluBackward0,165423.0,4580.0,860
+aten::mul_,7573.0,4377.0,2580
+aten::view,4161.0,4161.0,221720
+aten::argmax,4091.0,4076.0,430
+Optimizer.zero_grad#Adam.zero_grad,3955.0,3955.0,430
+aten::sub_,3941.0,3941.0,55000
+aten::resize_,4958.0,3825.0,864
+aten::nll_loss_backward,3768.0,3724.0,430
+torch::autograd::AccumulateGrad,5647.0,3666.0,2580
+aten::addcdiv_,3431.0,3431.0,2580
+aten::conv2d,1332266.0,3352.0,860
+aten::_log_softmax_backward_data,3199.0,3199.0,430
+aten::t,4665.0,3127.0,2150
+aten::detach,4641.0,3094.0,58010
+aten::addcmul_,3038.0,3038.0,2580
+aten::view_as,3125.0,3030.0,55000
+autograd::engine::evaluate_function: torch::autograd::AccumulateGrad,8134.0,2924.0,2580
+autograd::engine::evaluate_function: AddmmBackward0,28419.0,2888.0,430
+aten::lerp_,2723.0,2723.0,2580
+AddmmBackward0,22182.0,2715.0,430
+aten::linear,34943.0,2333.0,430
+aten::stack,16536.0,2304.0,430
+aten::nll_loss_forward,2009.0,2009.0,430
+detach,1970.0,1970.0,58010
+aten::item,2226.0,1828.0,113440
+aten::log_softmax,9735.0,1572.0,430
+aten::cross_entropy_loss,15378.0,1374.0,430
+autograd::engine::evaluate_function: NllLossBackward0,6148.0,1368.0,430
+LogSoftmaxBackward0,4349.0,1352.0,430
+aten::transpose,1542.0,1169.0,2150
+aten::narrow,1551.0,1139.0,430
+aten::flatten,2728.0,1074.0,430
+aten::nll_loss_nd,3903.0,1036.0,430
+aten::is_nonzero,1236.0,1030.0,55000
+NllLossBackward0,4761.0,1012.0,430
+aten::nll_loss,2749.0,981.0,430
+autograd::engine::evaluate_function: ConvolutionBackward0,5742651.0,570.0,860
+aten::_local_scalar_dense,560.0,560.0,113440
+aten::ones_like,1590.0,517.0,430
+aten::empty_like,1057.0,504.0,442
+aten::expand,468.0,452.0,430
+aten::set_,452.0,452.0,860
+aten::slice,440.0,434.0,430
+aten::detach_,433.0,426.0,436
+ViewBackward0,655.0,393.0,430
+autograd::engine::evaluate_function: LogSoftmaxBackward0,4923.0,379.0,430
+aten::reshape,382.0,379.0,430
+aten::randperm,796.0,360.0,4
+autograd::engine::evaluate_function: ReluBackward0,167918.0,346.0,860
+autograd::engine::evaluate_function: TBackward0,987.0,337.0,430
+aten::lift_fresh,308.0,308.0,165436
+autograd::engine::evaluate_function: ViewBackward0,909.0,224.0,430
+TBackward0,556.0,201.0,430
+aten::resolve_conj,74.0,74.0,58012
+aten::resolve_neg,20.0,20.0,55002
+aten::_nnpack_available,12.0,12.0,1720
+detach_,9.0,9.0,436
+aten::zeros_like,26.0,6.0,12
+aten::scalar_tensor,2.0,2.0,2
+autograd::engine::evaluate_function: MaxPool2DWithIndicesBackward0,190482.0,-5122.0,860

@@ -1,0 +1,2 @@
+epoch,lr,train_loss,train_accuracy,train_seconds,throughput,val_loss,val_accuracy,peak_tree_rss_mb
+1,0.001,0.5294914484891025,0.8133454545454546,198.49784666600317,277.081091426368,0.43922213439941404,0.8478,617.43104

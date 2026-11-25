@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/valeriahapilina/IDE/PyCharm/ml_73438/lab06/results/mlruns/723021657682040459/66dc2c334e8543648eec00323ce94466/artifacts
+end_time: 1795607962151
+entry_point_name: ''
+experiment_id: '723021657682040459'
+lifecycle_stage: active
+run_id: 66dc2c334e8543648eec00323ce94466
+run_name: SGD_ReduceLROnPlateau
+run_uuid: 66dc2c334e8543648eec00323ce94466
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1795607840339
+status: 3
+tags: []
+user_id: valeriahapilina
