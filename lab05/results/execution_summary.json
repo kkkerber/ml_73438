@@ -1,0 +1,41 @@
+{
+  "mode": "compile_inductor",
+  "reason": "Inductor probe succeeded",
+  "setup_seconds": 1.3840881249998347,
+  "repeats": 5,
+  "iterations_per_run": 1000,
+  "warmup_calls": 30,
+  "inference_only": true,
+  "batches": [
+    {
+      "batch": 1,
+      "median_seconds": {
+        "eager": 1.2181000005512032e-05,
+        "compile_inductor": 1.6476750002766492e-05
+      },
+      "speedup": 0.7392841430176952,
+      "extra_first_shape_call_seconds": 0.08002241699432489,
+      "setup_break_even_calls": null
+    },
+    {
+      "batch": 256,
+      "median_seconds": {
+        "eager": 1.7618541001866105e-05,
+        "compile_inductor": 3.222833300242201e-05
+      },
+      "speedup": 0.5466786321384368,
+      "extra_first_shape_call_seconds": 0.09300166599859949,
+      "setup_break_even_calls": null
+    },
+    {
+      "batch": 4096,
+      "median_seconds": {
+        "eager": 6.046704199980013e-05,
+        "compile_inductor": 7.30946249968838e-05
+      },
+      "speedup": 0.8272433438488533,
+      "extra_first_shape_call_seconds": 0.0003279999946244061,
+      "setup_break_even_calls": null
+    }
+  ]
+}

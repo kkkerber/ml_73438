@@ -1,0 +1,16 @@
+digraph autodiff {
+rankdir=LR;
+v0 [label="a | data=2 | grad=42", shape=box];
+v1 [label="b | data=3 | grad=28", shape=box];
+v2 [label="* | data=6 | grad=14", shape=box];
+v0 -> v2;
+v1 -> v2;
+v3 [label="c | data=1 | grad=14", shape=box];
+v4 [label="+ | data=7 | grad=14", shape=box];
+v2 -> v4;
+v3 -> v4;
+v5 [label="**2 | data=49 | grad=1", shape=box];
+v4 -> v5;
+v6 [label="ReLU | data=49 | grad=1", shape=box];
+v5 -> v6;
+}

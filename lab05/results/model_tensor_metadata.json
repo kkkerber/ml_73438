@@ -1,0 +1,76 @@
+{
+  "input": {
+    "shape": [
+      256,
+      2
+    ],
+    "dtype": "torch.float64",
+    "stride": [
+      2,
+      1
+    ],
+    "contiguous": true,
+    "requires_grad": false
+  },
+  "output": {
+    "shape": [
+      256
+    ],
+    "dtype": "torch.float64",
+    "stride": [
+      1
+    ],
+    "contiguous": true,
+    "requires_grad": true
+  },
+  "parameters": {
+    "w1": {
+      "shape": [
+        8,
+        2
+      ],
+      "dtype": "torch.float64",
+      "stride": [
+        2,
+        1
+      ],
+      "contiguous": true,
+      "requires_grad": true
+    },
+    "b1": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float64",
+      "stride": [
+        1
+      ],
+      "contiguous": true,
+      "requires_grad": true
+    },
+    "w2": {
+      "shape": [
+        1,
+        8
+      ],
+      "dtype": "torch.float64",
+      "stride": [
+        8,
+        1
+      ],
+      "contiguous": true,
+      "requires_grad": true
+    },
+    "b2": {
+      "shape": [
+        1
+      ],
+      "dtype": "torch.float64",
+      "stride": [
+        1
+      ],
+      "contiguous": true,
+      "requires_grad": true
+    }
+  }
+}

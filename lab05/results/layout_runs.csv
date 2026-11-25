@@ -1,0 +1,16 @@
+repeat,operation,layout,seconds_per_call
+1,add_preallocated,strided_view,0.0006335591649985872
+1,add_preallocated,contiguous_copy,0.00025413103998289443
+1,materialize_contiguous,strided_view,0.000508677500038175
+2,add_preallocated,contiguous_copy,0.00025575916999514447
+2,add_preallocated,strided_view,0.000675551460008137
+2,materialize_contiguous,strided_view,0.0005491266599710798
+3,add_preallocated,strided_view,0.0009838179199869047
+3,add_preallocated,contiguous_copy,0.000332803960009187
+3,materialize_contiguous,strided_view,0.0006127404200378805
+4,add_preallocated,contiguous_copy,0.0005278974999964703
+4,add_preallocated,strided_view,0.0010804927100252827
+4,materialize_contiguous,strided_view,0.0006635854100022698
+5,add_preallocated,strided_view,0.0007246449999729521
+5,add_preallocated,contiguous_copy,0.0003285383299953537
+5,materialize_contiguous,strided_view,0.0006398666600580328

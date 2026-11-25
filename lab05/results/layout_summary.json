@@ -1,0 +1,44 @@
+{
+  "tensors": {
+    "strided_view": {
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "torch.float64",
+      "stride": [
+        2048,
+        2
+      ],
+      "contiguous": false,
+      "storage_offset": 0,
+      "element_size": 8,
+      "shares_storage_with_backing": true
+    },
+    "contiguous_copy": {
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "torch.float64",
+      "stride": [
+        1024,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "element_size": 8
+    }
+  },
+  "repeats": 5,
+  "iterations_per_run": 200,
+  "warmup_calls": 30,
+  "operation": "torch.add(x, 1, out=out)",
+  "median_seconds": {
+    "strided_view": 0.0007246449999729521,
+    "contiguous_copy": 0.0003285383299953537
+  },
+  "noncontiguous_slowdown": 2.205663491329003,
+  "contiguous_materialization_seconds": 0.0006127404200378805,
+  "copy_break_even_operations": 1.5469076046422894
+}

@@ -1,0 +1,30 @@
+{
+  "n_samples": 200,
+  "n_train": 150,
+  "n_test": 50,
+  "seed": 42,
+  "noise": 0.15,
+  "architecture": "2 -> 8 ReLU -> 1 sigmoid",
+  "parameter_count": 33,
+  "dtype": "float64",
+  "device": "cpu",
+  "epochs": 300,
+  "learning_rate": 0.2,
+  "batch_size": 150,
+  "repeats": 5,
+  "median_seconds": {
+    "scalar": 21.143493374998798,
+    "pytorch": 0.037341333998483606
+  },
+  "pytorch_speedup": 566.2222291216863,
+  "max_final_parameter_difference": 4.440892098500626e-16,
+  "max_learning_curve_difference": 5.551115123125783e-16,
+  "test_accuracy": {
+    "scalar": 0.92,
+    "pytorch": 0.92
+  },
+  "final_train_loss": {
+    "scalar": 0.27566792162635034,
+    "pytorch": 0.27566792162635023
+  }
+}

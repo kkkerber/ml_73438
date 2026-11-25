@@ -1,0 +1,8 @@
+{
+  "cases": 25,
+  "derivatives": 300,
+  "epsilon": 1e-05,
+  "dtype": "float64",
+  "max_error_pytorch": 0.0,
+  "max_error_numeric": 6.324967216642108e-10
+}

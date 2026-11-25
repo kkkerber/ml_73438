@@ -1,0 +1,18 @@
+/Users/valeriahapilina/IDE/PyCharm/ml_73438/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+test_deep_graph (test_autodiff.AutodiffTests.test_deep_graph) ... ok
+test_exp_log_sigmoid (test_autodiff.AutodiffTests.test_exp_log_sigmoid) ... ok
+test_model_loss_all_parameter_gradients_and_step (test_autodiff.AutodiffTests.test_model_loss_all_parameter_gradients_and_step) ... ok
+test_power_zero (test_autodiff.AutodiffTests.test_power_zero) ... ok
+test_relu (test_autodiff.AutodiffTests.test_relu) ... ok
+test_repeated_backward_accumulates_leaves (test_autodiff.AutodiffTests.test_repeated_backward_accumulates_leaves) ... ok
+test_requested_expression_and_numeric (test_autodiff.AutodiffTests.test_requested_expression_and_numeric) ... ok
+test_reverse_arithmetic (test_autodiff.AutodiffTests.test_reverse_arithmetic) ... ok
+test_shared_operand_and_branch (test_autodiff.AutodiffTests.test_shared_operand_and_branch) ... ok
+test_stable_bce_extremes (test_autodiff.AutodiffTests.test_stable_bce_extremes) ... ok
+test_topological_dependencies (test_autodiff.AutodiffTests.test_topological_dependencies) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.042s
+
+OK

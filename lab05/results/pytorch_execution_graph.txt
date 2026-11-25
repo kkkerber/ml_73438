@@ -1,0 +1,128 @@
+graph():
+    %l_x_ : torch.Tensor [num_users=1] = placeholder[target=L_x_]
+    %l__self___hidden : [num_users=1] = call_module[target=L__self___hidden](args = (%l_x_,), kwargs = {})
+    %relu : [num_users=1] = call_function[target=torch.relu](args = (%l__self___hidden,), kwargs = {})
+    %l__self___output : [num_users=1] = call_module[target=L__self___output](args = (%relu,), kwargs = {})
+    %squeeze : [num_users=1] = call_method[target=squeeze](args = (%l__self___output, -1), kwargs = {})
+    return (squeeze,)
+
+
+
+def forward(self, L_x_ : torch.Tensor):
+    l_x_ = L_x_
+    l__self___hidden = self.L__self___hidden(l_x_);  l_x_ = None
+    relu = torch.relu(l__self___hidden);  l__self___hidden = None
+    l__self___output = self.L__self___output(relu);  relu = None
+    squeeze = l__self___output.squeeze(-1);  l__self___output = None
+    return (squeeze,)
+    
+
+Graph Count: 1
+Graph Break Count: 0
+Op Count: 1
+Break Reasons:
+Ops per Graph:
+  Ops 1:
+    <built-in method relu of type object at 0x12def3790>
+Out Guards:
+  Guard 1:
+    Name: "L['self'].output"
+    Source: local_nn_module
+    Create Function: NN_MODULE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 2:
+    Name: ''
+    Source: global
+    Create Function: TORCH_FUNCTION_STATE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 3:
+    Name: "G['torch']"
+    Source: global
+    Create Function: FUNCTION_MATCH
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 4:
+    Name: "L['x']"
+    Source: local
+    Create Function: TENSOR_MATCH
+    Guard Types: ['TENSOR_MATCH']
+    Code List: ["hasattr(L['x'], '_dynamo_dynamic_indices') == False"]
+    Object Weakref: <weakref at 0x13410bc40; to 'Tensor' at 0x12f17db50>
+    Guarded Class Weakref: <weakref at 0x12c0bc770; to 'torch._C._TensorMeta' at 0x74d2c1bc10 (Tensor)>
+  Guard 5:
+    Name: "L['self'].hidden"
+    Source: local_nn_module
+    Create Function: NN_MODULE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 6:
+    Name: ''
+    Source: global
+    Create Function: DEFAULT_DEVICE
+    Guard Types: ['DEFAULT_DEVICE']
+    Code List: ['utils_device.CURRENT_DEVICE == None']
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 7:
+    Name: ''
+    Source: shape_env
+    Create Function: SHAPE_ENV
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 8:
+    Name: "L['self']"
+    Source: local
+    Create Function: NN_MODULE
+    Guard Types: ['ID_MATCH']
+    Code List: ["___check_obj_id(L['self'], 5078127312)"]
+    Object Weakref: <weakref at 0x1328436a0; to 'TorchMLP' at 0x12eae12d0>
+    Guarded Class Weakref: <weakref at 0x12f16e4d0; to 'type' at 0x74d20e0410 (TorchMLP)>
+  Guard 9:
+    Name: ''
+    Source: global
+    Create Function: BACKEND_MATCH
+    Guard Types: ['BACKEND_MATCH']
+    Code List: ['___check_current_backend(5137101056)']
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 10:
+    Name: ''
+    Source: global
+    Create Function: GRAD_MODE
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 11:
+    Name: "G['torch'].relu"
+    Source: global
+    Create Function: FUNCTION_MATCH
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+  Guard 12:
+    Name: ''
+    Source: global
+    Create Function: DETERMINISTIC_ALGORITHMS
+    Guard Types: None
+    Code List: None
+    Object Weakref: None
+    Guarded Class Weakref: None
+Compile Times: TorchDynamo compilation metrics:
+Function, Runtimes (s)
+_compile.<locals>.compile_inner, 0.0121
+OutputGraph.call_user_compiler, 0.0000
+

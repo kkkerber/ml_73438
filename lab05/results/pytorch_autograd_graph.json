@@ -1,0 +1,118 @@
+[
+  {
+    "id": 0,
+    "type": "BinaryCrossEntropyWithLogitsBackward0",
+    "next_functions": [
+      {
+        "node": 1,
+        "output_slot": 0
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "type": "SqueezeBackward1",
+    "next_functions": [
+      {
+        "node": 2,
+        "output_slot": 0
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "AddmmBackward0",
+    "next_functions": [
+      {
+        "node": 3,
+        "output_slot": 0
+      },
+      {
+        "node": 4,
+        "output_slot": 0
+      },
+      {
+        "node": 5,
+        "output_slot": 0
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "AccumulateGrad",
+    "next_functions": [],
+    "leaf_shape": [
+      1
+    ]
+  },
+  {
+    "id": 4,
+    "type": "ReluBackward0",
+    "next_functions": [
+      {
+        "node": 7,
+        "output_slot": 0
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "TBackward0",
+    "next_functions": [
+      {
+        "node": 6,
+        "output_slot": 0
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "type": "AccumulateGrad",
+    "next_functions": [],
+    "leaf_shape": [
+      1,
+      8
+    ]
+  },
+  {
+    "id": 7,
+    "type": "AddmmBackward0",
+    "next_functions": [
+      {
+        "node": 8,
+        "output_slot": 0
+      },
+      {
+        "node": 9,
+        "output_slot": 0
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "type": "AccumulateGrad",
+    "next_functions": [],
+    "leaf_shape": [
+      8
+    ]
+  },
+  {
+    "id": 9,
+    "type": "TBackward0",
+    "next_functions": [
+      {
+        "node": 10,
+        "output_slot": 0
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "type": "AccumulateGrad",
+    "next_functions": [],
+    "leaf_shape": [
+      8,
+      2
+    ]
+  }
+]
